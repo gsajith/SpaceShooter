@@ -18,8 +18,11 @@ public class ShotMoveScript : MonoBehaviour {
 	private Vector2 movement;
 
 	
-	void OnTriggerExit2D(Collider2D other) {
-		Destroy (other.gameObject);
+	void OnTriggerEnter2D(Collider2D other) {
+		if(!other.isTrigger) {
+			Destroy (other.gameObject);
+			Destroy (this.gameObject);
+		}
 	}
 
 	void Update()

@@ -18,7 +18,7 @@ public class Enemy_MoveRight : MonoBehaviour {
 		//float moveHorizontal = Input.GetAxis ("Horizontal");
 		Vector2 movement = new Vector2 (1,0);
 		rigidbody2D.velocity = movement * speed;
-		if (collider.isTrigger) {
+		if (collider2D.isTrigger) {
 			maxEnemies++;
 
 		}
