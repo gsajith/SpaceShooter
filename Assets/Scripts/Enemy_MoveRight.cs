@@ -9,7 +9,7 @@ public class Enemy_MoveRight : MonoBehaviour {
 	}
 	public float maxEnemies;
 	public float speed = 1;
-	public GameObject Enemy;
+	//public GameObject Enemy;
 	//float count = 0;
 	// Update is called once per frame
 	//var projectile : Rigidbody2D;
@@ -18,10 +18,6 @@ public class Enemy_MoveRight : MonoBehaviour {
 		//float moveHorizontal = Input.GetAxis ("Horizontal");
 		Vector2 movement = new Vector2 (1,0);
 		rigidbody2D.velocity = movement * speed;
-		if (collider.isTrigger) {
-			maxEnemies++;
-
-		}
 		/*	var clone : Rigidbody2D;
 		clone = Instantiate (projectile, transform.positon, transform.rotation);
 		clone.velocity = transform.TransformDirection(Vector2.right);
