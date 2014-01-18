@@ -21,11 +21,11 @@ public class ButtonMouseoverScript : MonoBehaviour {
 		Destroy(newexplosion,1);
 	}
 
-	IEnumerator OnMouseRelease(){
+	IEnumerator OnMouseUp(){
 		Debug.Log ("Clickcckckckck");
 		yield return new WaitForSeconds(1);
 		
-		Application.LoadLevel("SceneName");
+		Application.LoadLevel("Menu");
 		
 	}
 
