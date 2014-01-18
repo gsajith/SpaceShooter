@@ -378,7 +378,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxEnemies: 0
   speed: 1
-  Enemy: {fileID: 0}
 --- !u!1 &2067195129
 GameObject:
   m_ObjectHideFlags: 0
