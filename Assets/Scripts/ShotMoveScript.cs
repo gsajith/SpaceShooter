@@ -19,7 +19,14 @@ public class ShotMoveScript : MonoBehaviour {
 
 	
 	void OnTriggerEnter2D(Collider2D other) {
+<<<<<<< HEAD
 		Destroy (other.gameObject);
+=======
+		if(!other.isTrigger) {
+			Destroy (other.gameObject);
+			Destroy (this.gameObject);
+		}
+>>>>>>> d1b143806380f0782a3366c83d0a4659b8ea9aa6
 	}
 
 	void Update()
