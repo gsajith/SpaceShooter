@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Enemy_MoveRight : MonoBehaviour {
+public class Enemy_MoveDirection : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
 	
 	}
-	public float maxEnemies;
+	//public float maxEnemies;
+	public float h, v;
 	public float speed = 1;
 	//public GameObject Enemy;
 	//float count = 0;
@@ -16,7 +17,7 @@ public class Enemy_MoveRight : MonoBehaviour {
 
 	void Update () {
 		//float moveHorizontal = Input.GetAxis ("Horizontal");
-		Vector2 movement = new Vector2 (1,0);
+		Vector2 movement = new Vector2 (h,v);
 		rigidbody2D.velocity = movement * speed;
 
 		/*	var clone : Rigidbody2D;
