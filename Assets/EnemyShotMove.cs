@@ -3,13 +3,19 @@ using System.Collections;
 
 public class EnemyShotMove : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
+	public float speed = 10F;
+	public float damage = 1F;
+	public Vector2 direction = new Vector2(1,0);
+
+	void Start(){
+				collider.enabled = false;
+		}
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.isTrigger) {
+			//takeDamage(damage);
+			Destroy (this);
+		}
+
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }
