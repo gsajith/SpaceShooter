@@ -19,7 +19,14 @@ public class ButtonMouseoverScript : MonoBehaviour {
 	void OnMouseDown() {
 		GameObject newexplosion = (GameObject)Instantiate(particles,transform.position,transform.rotation);
 		Destroy(newexplosion,1);
+	}
 
+	IEnumerator OnMouseRelease(){
+		Debug.Log ("Clickcckckckck");
+		yield return new WaitForSeconds(1);
+		
+		Application.LoadLevel("SceneName");
+		
 	}
 
 }
