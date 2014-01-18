@@ -16,7 +16,12 @@ public class ShotMoveScript : MonoBehaviour {
 	public Vector2 direction = new Vector2(-1, 0);
 	
 	private Vector2 movement;
+
 	
+	void OnTriggerExit2D(Collider2D other) {
+		Destroy (other.gameObject);
+	}
+
 	void Update()
 	{
 		// 2 - Movement
