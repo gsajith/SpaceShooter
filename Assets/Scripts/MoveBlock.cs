@@ -27,9 +27,9 @@ public class MoveBlock : MonoBehaviour {
 	}
 
 	private float round(float x) {
-		double hold = x / 0.25;
+		double hold = x / 0.5;
 		int hold2 = (int)Math.Round (hold, 0);
-		float hold3 = (float)(hold2 * 0.25);
+		float hold3 = (float)(hold2 * 0.5);
 		return hold3;
 	}
 
@@ -40,8 +40,8 @@ public class MoveBlock : MonoBehaviour {
 			//point.x = (float)Math.Round ((double)point.x, 1);
 			Debug.Log (point.x);
 			Debug.Log (" ");
-			Debug.Log (Math.Round ((double)point.x, 1));
-			Debug.Log ((float)Math.Round ((double)point.x, 1));
+			Debug.Log (Math.Round ((double)point.x, 2));
+			Debug.Log ((float)Math.Round ((double)point.x, 2));
 			//point.z = (float)Math.Round ((double)point.z, 1);
 			point.x = round (point.x);
 			point.z = round (point.z);
