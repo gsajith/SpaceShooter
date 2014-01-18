@@ -376,7 +376,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78d51671afa10c64cb900d1fd0c14a35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxEnemies: 0
+  h: 5
+  v: 1
   speed: 1
 --- !u!1 &2067195129
 GameObject:
