@@ -13,6 +13,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 50: {fileID: 5000000}
   - 61: {fileID: 6100000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: Shot_Clone
   m_TagString: Untagged
@@ -46,7 +47,7 @@ Renderer:
   - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
+  m_UseLightProbes: 1
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayer: 0
@@ -65,7 +66,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mass: 1
+  m_Mass: 9.99999975e-05
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -98,6 +99,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: {x: 15, y: 15}
   direction: {x: 0, y: 1}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad696a373d382b4183a1f69f30cd47f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 14
+  damage: 1
+  direction: {x: 0, y: -1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
