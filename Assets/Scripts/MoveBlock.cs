@@ -21,7 +21,7 @@ public class MoveBlock : MonoBehaviour {
 	void OnMouseDrag() {
 		if(canMove) {
 			Vector3 point = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-			point.z = 4.0f;
+			point.z = 5.0f;
 			gameObject.transform.position = point;
 		}
 	}

@@ -8,11 +8,11 @@ public class ButtonMouseoverScript : MonoBehaviour {
 	public Sprite mouseoverSprite;
 	public GameObject particles;
 	public GameObject playerPrefab;
+	public bool makePrefab;
 	public int sceneNum;
 
 	void OnMouseEnter() {
 		gameObject.GetComponent<SpriteRenderer> ().sprite = mouseoverSprite;
-
 	}
 
 	void OnMouseExit() {
@@ -26,10 +26,21 @@ public class ButtonMouseoverScript : MonoBehaviour {
 
 	IEnumerator OnMouseUp(){
 		yield return new WaitForSeconds(1);
-		var location = "Assets/PlayerPrefab.prefab";
-		PrefabUtility.CreatePrefab(location, 
-		                           playerPrefab, 
-		                           ReplacePrefabOptions.ReplaceNameBased);
+		if(makePrefab){
+			palletDrag[] drags = playerPrefab.GetComponentsInChildren<palletDrag>();
+			foreach(palletDrag drag in drags) {
+				drag.canDrag = false;
+			}
+			MoveBlock[] moveBlocks = playerPrefab.GetComponentsInChildren<MoveBlock>();
+			foreach(MoveBlock moveBlock in moveBlocks) {
+				moveBlock.canMove = false;
+			}
+			var location = "Assets/PlayerPrefab.prefab";
+			PrefabUtility.CreatePrefab(location, 
+			                           playerPrefab, 
+			                           ReplacePrefabOptions.ReplaceNameBased);
+
+		}
 		//Application.LoadLevel(sceneNum);
 		
 	}
