@@ -10,6 +10,8 @@ public class Enemy_MoveDirection : MonoBehaviour {
 	//public float maxEnemies;
 	public float h, v;
 	public float speed = 1;
+	public float health = 1;
+	private bool isEnemy = true;
 	//public GameObject Enemy;
 	//float count = 0;
 	// Update is called once per frame

@@ -8,7 +8,7 @@ public class EnemyShotMove : MonoBehaviour {
 	public Vector2 direction = new Vector2(-1,0);
 	private Vector2 movement;
 	void OnTriggerEnter2D(Collider2D other){
-		if (other.isTrigger) {
+		if (!other.isTrigger) {
 			//takeDamage(damage);
 			Destroy (other);
 			Destroy (this);
