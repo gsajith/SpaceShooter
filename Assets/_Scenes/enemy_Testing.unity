@@ -126,6 +126,7 @@ GameObject:
   - 92: {fileID: 329509127}
   - 124: {fileID: 329509126}
   - 81: {fileID: 329509125}
+  - 114: {fileID: 329509130}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -194,6 +195,17 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &329509130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 329509124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8e5ebea2750796448972f25a6d55109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &334917656
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,6 +248,7 @@ GameObject:
   - 23: {fileID: 620370434}
   - 114: {fileID: 620370433}
   - 61: {fileID: 620370432}
+  - 114: {fileID: 620370437}
   m_Layer: 0
   m_Name: Border
   m_TagString: Untagged
@@ -304,6 +317,17 @@ Transform:
   m_LocalScale: {x: 6, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &620370437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 620370431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8e5ebea2750796448972f25a6d55109, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &656079702
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,7 +569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 095d854c9527d8945ac12ab864e74c7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entity: {fileID: 100000, guid: 5eb705a38c6664f4a90f73a4f6c9c31a, type: 2}
+  entity: {fileID: 100000, guid: 417d4a6c903fa134087bb443ea770b96, type: 2}
   spawnrate: 3
 --- !u!1 &2117802421
 GameObject:
@@ -585,5 +609,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 095d854c9527d8945ac12ab864e74c7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entity: {fileID: 100000, guid: 9a06e9122f10d5147a75bd03da7504c9, type: 2}
+  entity: {fileID: 100000, guid: fea0225c71edb6b4eb6127e7a29d72d6, type: 2}
   spawnrate: 3

@@ -3,8 +3,8 @@ using System.Collections;
 
 public class Wall : MonoBehaviour {
 
-void onCollider2D(Collider2D other){
-		Destroy (other);
+void onCollisionEnter2D(Collider2D other){
+		//GetComponent(Camera_PanForward).enabled = false;
 
 	}
 }
