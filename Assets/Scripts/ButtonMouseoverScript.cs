@@ -36,13 +36,19 @@ public class ButtonMouseoverScript : MonoBehaviour {
 			foreach(MoveBlock moveBlock in moveBlocks) {
 				moveBlock.canMove = false;
 			}
+
+			foreach(ShipPart part in ShipMakerScript.shipParts) {
+				Debug.Log (part.obj.GetComponent<BoxCollider>());
+				DestroyImmediate(part.obj.collider);
+				BoxCollider2D bc =part.obj.AddComponent ("BoxCollider2D") as BoxCollider2D;
+			}
 			var location = "Assets/PlayerPrefab.prefab";
 			PrefabUtility.CreatePrefab(location, 
 			                           playerPrefab, 
 			                           ReplacePrefabOptions.ReplaceNameBased);
 
 		}
-		//Application.LoadLevel(sceneNum);
+		Application.LoadLevel(sceneNum);
 		
 	}
 

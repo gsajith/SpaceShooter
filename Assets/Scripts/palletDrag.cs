@@ -15,7 +15,7 @@ public class palletDrag : MonoBehaviour {
 		if(canDrag) {
 			GameObject original = this.gameObject;
 			Vector3 pos = original.transform.position;
-			pos.z = 5.0f;
+			pos.z = 0.0f;
 			GameObject clone = Instantiate(original, pos, original.transform.rotation) as GameObject;
 			clone.transform.parent = ShipPrefab.transform;
 			MoveBlock script = clone.GetComponent<MoveBlock> ();

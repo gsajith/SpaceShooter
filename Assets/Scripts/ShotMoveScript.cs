@@ -21,7 +21,7 @@ public class ShotMoveScript : MonoBehaviour {
 
 	void Start() {
 		Vector3 pos = this.gameObject.transform.position;
-		pos.z = 5;
+		pos.z = 0.0f;
 		this.gameObject.transform.position = pos;
 	}
 	
