@@ -3,8 +3,10 @@ using System.Collections;
 
 public class BorderDestroyScript : MonoBehaviour {
 
+	void OnTriggerEnter2D(Collider2D other) {
+				Debug.Log ("sup");
+		}
 	void OnTriggerExit2D(Collider2D other) {
-		Debug.Log ("destroying");
 		Destroy (other.gameObject);
 	}
 }
