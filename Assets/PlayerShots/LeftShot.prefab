@@ -14,7 +14,7 @@ GameObject:
   - 61: {fileID: 6100000}
   - 50: {fileID: 5000000}
   m_Layer: 0
-  m_Name: Shot
+  m_Name: LeftShot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,7 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 15, y: 15}
-  direction: {x: 0, y: 1}
+  direction: {x: -1, y: 0}
+  damage: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -13,7 +13,7 @@ public class PlayerMoveScript : MonoBehaviour
 	public float tilt;
 	public Boundary boundary;
 	public float fireRate;
-	public GameObject shot;
+	public List<GameObject> shots = new List<GameObject> ();
 	public List<Transform> shotSpawns = new List<Transform>();
 	public float health = 10;
 
@@ -23,8 +23,10 @@ public class PlayerMoveScript : MonoBehaviour
 	void Update() {
 		if (Input.GetButton("Fire1") && Time.time > nextFire)
 		{
+			int i = 0;
 			foreach(Transform shotSpawn in shotSpawns) {
-				Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
+				Instantiate (shots[i], shotSpawn.position, shotSpawn.rotation);
+				i++;
 			}
 			nextFire = Time.time + fireRate;
 		}
@@ -42,7 +44,7 @@ public class PlayerMoveScript : MonoBehaviour
 			(
 				Mathf.Clamp (rigidbody2D.transform.position.x, boundary.xMin, boundary.xMax), 
 				Mathf.Clamp (rigidbody2D.transform.position.y, boundary.yMin, boundary.yMax),
-				5.0f);
+				rigidbody2D.transform.position.z);
 
 	}
 }

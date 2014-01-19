@@ -447,7 +447,9 @@ MonoBehaviour:
     yMin: .5
     yMax: 9.5
   fireRate: .25
-  shot: {fileID: 100000, guid: 28a73734a5a5576489bc8751e20056f7, type: 2}
+  shots:
+  - {fileID: 100000, guid: 28a73734a5a5576489bc8751e20056f7, type: 2}
+  - {fileID: 100000, guid: 28a73734a5a5576489bc8751e20056f7, type: 2}
   shotSpawns:
   - {fileID: 656079703}
   - {fileID: 809884879}
