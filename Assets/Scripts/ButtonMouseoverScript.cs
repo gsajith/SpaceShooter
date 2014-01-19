@@ -25,7 +25,7 @@ public class ButtonMouseoverScript : MonoBehaviour {
 	IEnumerator OnMouseUp(){
 		yield return new WaitForSeconds(1);
 		
-		Application.LoadLevel(sceneNum);
+		//Application.LoadLevel(sceneNum);
 		
 	}
 
