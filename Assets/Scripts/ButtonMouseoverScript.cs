@@ -29,6 +29,7 @@ public class ButtonMouseoverScript : MonoBehaviour {
 		if(makePrefab){
 			palletDrag[] drags = playerPrefab.GetComponentsInChildren<palletDrag>();
 			foreach(palletDrag drag in drags) {
+				Destroy(drag.collider);
 				drag.canDrag = false;
 			}
 			MoveBlock[] moveBlocks = playerPrefab.GetComponentsInChildren<MoveBlock>();

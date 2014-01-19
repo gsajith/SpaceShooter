@@ -1492,7 +1492,8 @@ Prefab:
       propertyPath: m_Name
       value: Plane
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: b62e6cae7fc9d4a4bb8b77358229ede3, type: 2}
   m_RootGameObject: {fileID: 1581111433}
   m_IsPrefabParent: 0
