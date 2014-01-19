@@ -30,7 +30,7 @@ public class ButtonMouseoverScript : MonoBehaviour {
 		PrefabUtility.CreatePrefab(location, 
 		                           playerPrefab, 
 		                           ReplacePrefabOptions.ReplaceNameBased);
-		//Application.LoadLevel(sceneNum);
+		Application.LoadLevel(sceneNum);
 		
 	}
 
