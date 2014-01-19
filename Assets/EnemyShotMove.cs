@@ -4,14 +4,18 @@ using System.Collections;
 public class EnemyShotMove : MonoBehaviour {
 
 	public float speed = 10F;
-	public float damage = 1F;
+	public float damage = 1.0f;
 	public Vector2 direction = new Vector2(-1,0);
 	private Vector2 movement;
 	void OnTriggerEnter2D(Collider2D other){
-		if (!other.isTrigger) {
-			//takeDamage(damage);
-			Destroy (other);
-			Destroy (this);
+		PlayerMoveScript isPlayer = other.GetComponent<PlayerMoveScript> ();
+		if(isPlayer != null) {
+			Debug.Log ("enemy hit something");
+			isPlayer.health -= damage;
+			Destroy (this.gameObject);
+			if(isPlayer.health <= 0) {
+				Destroy (other.gameObject);
+			}
 		}
 
 	}

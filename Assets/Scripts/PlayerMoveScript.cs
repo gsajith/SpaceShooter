@@ -18,7 +18,6 @@ public class PlayerMoveScript : MonoBehaviour
 	public float health = 10;
 
 	private float nextFire;
-	private bool isEnemy = false;
 
 
 	void Update() {
