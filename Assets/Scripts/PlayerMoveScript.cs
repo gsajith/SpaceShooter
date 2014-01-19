@@ -15,8 +15,10 @@ public class PlayerMoveScript : MonoBehaviour
 	public float fireRate;
 	public GameObject shot;
 	public List<Transform> shotSpawns = new List<Transform>();
+	public float health = 10;
 
 	private float nextFire;
+	private bool isEnemy = false;
 
 
 	void Update() {

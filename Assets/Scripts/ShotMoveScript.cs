@@ -17,10 +17,15 @@ public class ShotMoveScript : MonoBehaviour {
 	
 	private Vector2 movement;
 
+	void Start() {
+		Vector3 pos = this.gameObject.transform.position;
+		pos.z = 5;
+		this.gameObject.transform.position = pos;
+	}
 	
 	void OnTriggerEnter2D(Collider2D other) {
-
-		if(!other.isTrigger) {
+		if(!(other.isTrigger)) {
+			Debug.Log ("here");
 			Destroy (other.gameObject);
 			Destroy (this.gameObject);
 		}
