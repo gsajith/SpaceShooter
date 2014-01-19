@@ -40,6 +40,9 @@ public class ButtonMouseoverScript : MonoBehaviour {
 				Debug.Log (part.obj.GetComponent<BoxCollider>());
 				DestroyImmediate(part.obj.collider);
 				BoxCollider2D bc =part.obj.AddComponent ("BoxCollider2D") as BoxCollider2D;
+				Vector3 t = bc.transform.localScale;
+				t.y = 20;
+				bc.transform.localScale = t;
 			}
 			var location = "Assets/PlayerPrefab.prefab";
 			PrefabUtility.CreatePrefab(location, 
