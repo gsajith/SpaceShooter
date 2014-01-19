@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEditor;
 using System.Collections;
 
 public class ButtonMouseoverScript : MonoBehaviour {
@@ -6,6 +7,7 @@ public class ButtonMouseoverScript : MonoBehaviour {
 	public Sprite sprite;
 	public Sprite mouseoverSprite;
 	public GameObject particles;
+	public GameObject playerPrefab;
 	public int sceneNum;
 
 	void OnMouseEnter() {
@@ -24,7 +26,10 @@ public class ButtonMouseoverScript : MonoBehaviour {
 
 	IEnumerator OnMouseUp(){
 		yield return new WaitForSeconds(1);
-		
+		var location = "Assets/PlayerPrefab.prefab";
+		PrefabUtility.CreatePrefab(location, 
+		                           playerPrefab, 
+		                           ReplacePrefabOptions.ReplaceNameBased);
 		//Application.LoadLevel(sceneNum);
 		
 	}
