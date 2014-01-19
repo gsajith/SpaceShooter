@@ -13,7 +13,6 @@ public class ButtonMouseoverScript : MonoBehaviour {
 
 	void OnMouseEnter() {
 		gameObject.GetComponent<SpriteRenderer> ().sprite = mouseoverSprite;
-
 	}
 
 	void OnMouseExit() {

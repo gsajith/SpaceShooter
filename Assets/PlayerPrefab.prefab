@@ -1,5 +1,7 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
+=======
 --- !u!1 &100000
 GameObject:
   m_ObjectHideFlags: 1
@@ -1101,15 +1103,24 @@ MonoBehaviour:
   type: 0
   ShipPrefab: {fileID: 0}
   shotType: {fileID: 0}
+>>>>>>> f09f852c72d0390f6ee617370dc3a149ce6a6e0e
 --- !u!1001 &100100000
 Prefab:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
+<<<<<<< HEAD
   m_RootGameObject: {fileID: 100028}
+=======
+<<<<<<< HEAD
+  m_RootGameObject: {fileID: 0}
+=======
+  m_RootGameObject: {fileID: 100014}
+>>>>>>> f09f852c72d0390f6ee617370dc3a149ce6a6e0e
+>>>>>>> c148d3fbc209d43eb3e8a7b28e11d8c6684ec975
   m_IsPrefabParent: 1
   m_IsExploded: 1

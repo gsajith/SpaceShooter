@@ -10,7 +10,9 @@ public class HealthBar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Vector3 Scale = transform.localScale;
-		transform.localScale = new Vector3 ((PlayerMoveScript.healthbar * 2f) / 100f, 0.2f, 0.015f);
+		transform.localScale = new Vector3 ((PlayerMoveScript.healthbar * 2f) / 10f, 0.2f, 1f);
+		if (PlayerMoveScript.healthbar == 0) {
+			transform.localScale = new Vector3(0f, 0f, 0f);
+		}                          
 	}
 }
