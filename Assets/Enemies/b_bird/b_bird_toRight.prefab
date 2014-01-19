@@ -11,10 +11,11 @@ GameObject:
   - 50: {fileID: 5000000}
   - 61: {fileID: 6100000}
   - 212: {fileID: 21200000}
-  - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
+  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400004}
   m_Layer: 0
-  m_Name: A_toRight
+  m_Name: b_bird_toRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.0991173, y: -2170.94434, z: -10}
+  m_LocalPosition: {x: 2.28688765, y: 9.07569981, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -63,15 +64,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78d51671afa10c64cb900d1fd0c14a35, type: 3}
+  m_Script: {fileID: 11500000, guid: a8103af2cbecc844e8d563a0a0523d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  h: 1
-  v: 0
-  speed: 1
-  health: 1
+  shot: {fileID: 0}
+  firerate: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -80,11 +79,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8103af2cbecc844e8d563a0a0523d00, type: 3}
+  m_Script: {fileID: 11500000, guid: 78d51671afa10c64cb900d1fd0c14a35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shot: {fileID: 100000, guid: 5465e3dd35413a446abe9ef3b353ca5b, type: 2}
-  firerate: 2
+  h: 1
+  v: .5
+  speed: 1
+  health: 1
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2319d66bb59299445a86ecf85a432c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 0
+  y: 0
+  direction: {x: 0, y: 0}
+  speed: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -106,7 +122,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300000, guid: d16d943f1a1a02441ae5b5a0e7e2b338, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b981f72dc5d5b834e9fa9690895966e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
