@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-public class changeColor : MonoBehaviour {
+public class palletDrag : MonoBehaviour {
 
 	public bool isPaint;
 	public bool canDrag;
@@ -16,14 +16,8 @@ public class changeColor : MonoBehaviour {
 			GameObject clone = Instantiate(original, pos, original.transform.rotation) as GameObject;
 			MoveBlock script = clone.GetComponent<MoveBlock> ();
 			script.canMove = true;
-			changeColor colorScript = clone.GetComponent<changeColor>();
+			palletDrag colorScript = clone.GetComponent<palletDrag>();
 			colorScript.canDrag = false;
-		}
-
-		if (isPaint) {
-			renderer.material.color = holdColor.hold;
-		} else {
-			holdColor.hold = renderer.material.color;
 		}
 	}
 
