@@ -6,6 +6,7 @@ public class ButtonMouseoverScript : MonoBehaviour {
 	public Sprite sprite;
 	public Sprite mouseoverSprite;
 	public GameObject particles;
+	public int sceneNum;
 
 	void OnMouseEnter() {
 		gameObject.GetComponent<SpriteRenderer> ().sprite = mouseoverSprite;
@@ -22,10 +23,9 @@ public class ButtonMouseoverScript : MonoBehaviour {
 	}
 
 	IEnumerator OnMouseUp(){
-		Debug.Log ("Clickcckckckck");
 		yield return new WaitForSeconds(1);
 		
-		Application.LoadLevel("Menu");
+		Application.LoadLevel(sceneNum);
 		
 	}
 
