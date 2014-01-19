@@ -16,6 +16,7 @@ public class PlayerMoveScript : MonoBehaviour
 	public List<GameObject> shots = new List<GameObject> ();
 	public List<Transform> shotSpawns = new List<Transform>();
 	public float health = 10;
+	static public float healthbar = 10;
 
 	private float nextFire;
 
@@ -30,6 +31,7 @@ public class PlayerMoveScript : MonoBehaviour
 			}
 			nextFire = Time.time + fireRate;
 		}
+		healthbar = health;
 	}
 	
 	void FixedUpdate ()
