@@ -31,6 +31,7 @@ public class ShotMoveScript : MonoBehaviour {
 			enemyScript.health -= damage;
 			Destroy (other.gameObject);
 			Destroy (this.gameObject);
+			ScoreScript.score += enemyScript.bounty;
 		}
 
 	}

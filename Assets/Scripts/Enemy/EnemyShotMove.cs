@@ -8,14 +8,14 @@ public class EnemyShotMove : MonoBehaviour {
 	public Vector2 direction = new Vector2(-1,0);
 	private Vector2 movement;
 	void OnTriggerEnter2D(Collider2D other){
-		Transform t = other.transform;
-		Debug.Log (other.transform);
-		PlayerMoveScript isPlayer = (PlayerMoveScript)t.parent.GetComponent (typeof(PlayerMoveScript));
-		if(isPlayer != null) {
-			isPlayer.health -= damage;
-			Destroy (this.gameObject);
-			if(isPlayer.health <= 0) {
-				Destroy (other.transform.parent.gameObject);
+		if(other.transform.parent != null){
+			PlayerMoveScript isPlayer = other.transform.parent.GetComponent<PlayerMoveScript> ();
+			if(isPlayer != null) {
+				isPlayer.health -= damage;
+				Destroy (this.gameObject);
+				if(isPlayer.health <= 0) {
+					Destroy (other.transform.parent.gameObject);
+				}
 			}
 		}
 

@@ -33,7 +33,7 @@ public class PlayerMoveScript : MonoBehaviour
 		}
 		healthbar = health;
 	}
-	
+
 	void FixedUpdate ()
 	{
 		float moveHorizontal = Input.GetAxis ("Horizontal");

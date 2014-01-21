@@ -11,6 +11,7 @@ public class Enemy_MoveDirection : MonoBehaviour {
 	public float h, v;
 	public float speed = 1;
 	public float health = 1;
+	public float bounty = 100;
 	//public GameObject Enemy;
 	//float count = 0;
 	// Update is called once per frame

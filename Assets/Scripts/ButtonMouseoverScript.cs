@@ -45,7 +45,7 @@ public class ButtonMouseoverScript : MonoBehaviour {
 				t.y = 20;
 				bc.transform.localScale = t;
 			}
-			var location = "Assets/PlayerPrefab.prefab";
+			var location = "Assets/Resources/PlayerPrefab.prefab";
 			PrefabUtility.CreatePrefab(location, 
 			                           playerPrefab, 
 			                           ReplacePrefabOptions.ReplaceNameBased);

@@ -38,6 +38,11 @@ public class palletDrag : MonoBehaviour {
 				shotSpawn = Instantiate (spawn, clone.transform.position, clone.transform.rotation) as GameObject;
 				shotSpawn.transform.Rotate (90, 0, 0);
 				shotSpawn.transform.parent = clone.transform;
+				Vector3 spawnPos = shotSpawn.transform.position;
+				if(type==1) spawnPos.y += 5.5f/20f;
+				if(type==2) spawnPos.x += 5.5f/20f;
+				if(type==3) spawnPos.x -= 5.5f/20f;
+				shotSpawn.transform.position = spawnPos;
 
 				PlayerMoveScript pms = ShipPrefab.GetComponent<PlayerMoveScript>();
 				if(pms != null) {
