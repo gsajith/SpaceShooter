@@ -18,13 +18,11 @@ public class EnemyShotMove : MonoBehaviour {
 				}
 			}
 		}
-
 	}
 
 
 	void Update()
 	{
-		// 2 - Movement
 		movement = new Vector2(
 			speed * direction.x,
 			speed * direction.y);
@@ -32,7 +30,6 @@ public class EnemyShotMove : MonoBehaviour {
 	
 	void FixedUpdate()
 	{
-		// Apply movement to the rigidbody
 		rigidbody2D.velocity = movement;
 	}
 

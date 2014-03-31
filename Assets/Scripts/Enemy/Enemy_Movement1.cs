@@ -9,7 +9,7 @@ public class Enemy_Movement1 : MonoBehaviour {
 
 	void Update(){
 		movement = new Vector2 (speed * direction.x, (Mathf.Cos(direction.x * Mathf.Deg2Rad)*(1/2)));
-		}
+	}
 
 	void FixedUpdate(){
 		this.rigidbody2D.velocity = movement;

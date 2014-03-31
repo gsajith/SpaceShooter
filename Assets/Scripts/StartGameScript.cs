@@ -3,7 +3,7 @@ using System.Collections;
 
 public class StartGameScript : MonoBehaviour {
 	public GameObject healthBarObject;
-	// Use this for initialization
+
 	void Start () {
 		GameObject playerPrefab = Instantiate (Resources.Load ("PlayerPrefab", typeof(GameObject))) as GameObject;
 		Vector3 localScale = playerPrefab.transform.localScale;
@@ -21,8 +21,7 @@ public class StartGameScript : MonoBehaviour {
 			healthBar.player = playerPrefab;
 		}
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 	
 	}

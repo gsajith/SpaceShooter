@@ -12,8 +12,6 @@ public class EnemyShoot : MonoBehaviour {
 		if (thisTime > nextshot) {
 			nextshot = firerate+thisTime+Random.value*.5f;
 			Instantiate (shot, transform.position, transform.rotation);
-
 		}
-
 	}
 }
