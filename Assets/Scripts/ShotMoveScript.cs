@@ -25,6 +25,8 @@ public class ShotMoveScript : MonoBehaviour {
 			Destroy (this.gameObject);
 			ScoreScript.score += enemyScript.bounty;
 		}
+		if (other.tag == "boss")
+			Destroy (this.gameObject);
 
 	}
 

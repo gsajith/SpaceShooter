@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class LevelEndScript : MonoBehaviour {
 	public List<GameObject> spawners = new List<GameObject> ();
-
+	public Boss1 boss;
 	// Use this for initialization
 	void Start () {
 	
@@ -19,9 +19,10 @@ public class LevelEndScript : MonoBehaviour {
 		}
 		Debug.Log (enemiesLeft);
 		if(enemiesLeft == 0) {
-			Debug.Log ("level done!");	
-			waitForSecs(3);	
-			Application.LoadLevel(1);
+			//Debug.Log ("level done!");	
+			//waitForSecs(3);	
+			//Application.LoadLevel(1);
+			boss.activated = true;
 		}
 	}
 
