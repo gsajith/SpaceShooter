@@ -12,6 +12,7 @@ public class Enemy_MoveDirection : MonoBehaviour {
 	public float speed = 1;
 	public float health = 1;
 	public float bounty = 100;
+	public GameObject spawner;
 	//public GameObject Enemy;
 	//float count = 0;
 	// Update is called once per frame
@@ -26,5 +27,12 @@ public class Enemy_MoveDirection : MonoBehaviour {
 		clone = Instantiate (projectile, transform.positon, transform.rotation);
 		clone.velocity = transform.TransformDirection(Vector2.right);
 	*/}
+
+	void OnDestroy() {
+		spawnEntity spawnScript = spawner.GetComponent<spawnEntity> ();
+		if(spawnScript != null) {
+			spawnScript.removeOneEnemy();
+		}
+	}
 
 }

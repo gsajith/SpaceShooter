@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using System.Collections;
 
 public class ButtonMouseoverScript : MonoBehaviour {
@@ -38,12 +40,13 @@ public class ButtonMouseoverScript : MonoBehaviour {
 			}
 
 			foreach(ShipPart part in ShipMakerScript.shipParts) {
-				Debug.Log (part.obj.GetComponent<BoxCollider>());
-				DestroyImmediate(part.obj.collider);
-				BoxCollider2D bc =part.obj.AddComponent ("BoxCollider2D") as BoxCollider2D;
-				Vector3 t = bc.transform.localScale;
-				t.y = 20;
-				bc.transform.localScale = t;
+				if(part.obj != null) {
+					DestroyImmediate(part.obj.collider);
+					BoxCollider2D bc =part.obj.AddComponent ("BoxCollider2D") as BoxCollider2D;
+					Vector3 t = bc.transform.localScale;
+					t.y = 20;
+					bc.transform.localScale = t;
+				} 
 			}
 			var location = "Assets/Resources/PlayerPrefab.prefab";
 			PrefabUtility.CreatePrefab(location, 

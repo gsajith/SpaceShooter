@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class StartGameScript : MonoBehaviour {
-
+	public GameObject healthBarObject;
 	// Use this for initialization
 	void Start () {
 		GameObject playerPrefab = Instantiate (Resources.Load ("PlayerPrefab", typeof(GameObject))) as GameObject;
@@ -13,8 +13,12 @@ public class StartGameScript : MonoBehaviour {
 		playerPrefab.transform.localScale = localScale;
 		PlayerMoveScript pms = playerPrefab.GetComponent<PlayerMoveScript> ();
 		if(pms != null) {
-			pms.fireRate = .5f;
-			pms.speed = 4f;
+			pms.fireRate = .3f;
+			pms.speed = .03f;
+		}
+		HealthBar healthBar = healthBarObject.GetComponent<HealthBar> ();
+		if(healthBar != null) {
+			healthBar.player = playerPrefab;
 		}
 	}
 	
