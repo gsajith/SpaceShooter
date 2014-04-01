@@ -48,11 +48,11 @@ public class ButtonMouseoverScript : MonoBehaviour {
 					bc.transform.localScale = t;
 				} 
 			}
-			var location = "Assets/Resources/PlayerPrefab.prefab";
-			PrefabUtility.CreatePrefab(location, 
-			                           playerPrefab, 
-			                           ReplacePrefabOptions.ReplaceNameBased);
-
+			//var location = "Assets/Resources/PlayerPrefab.prefab";
+			//PrefabUtility.CreatePrefab(location, 
+			//                           playerPrefab, 
+			//                           ReplacePrefabOptions.ReplaceNameBased);
+			DontDestroyOnLoad(playerPrefab);
 		}
 		Application.LoadLevel(sceneNum);
 		
