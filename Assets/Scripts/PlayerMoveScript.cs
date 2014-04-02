@@ -38,14 +38,27 @@ public class PlayerMoveScript : MonoBehaviour
 			nextFire = Time.time + fireRate;
 		}
 		healthbar = health;
-
-
+		invinsTime -= Time.deltaTime;
+		if (invinsTime > 0) {
+			MeshRenderer[] renderers = this.gameObject.GetComponentsInChildren<MeshRenderer>();
+			foreach(MeshRenderer renderer in renderers) {
+				renderer.enabled = !renderer.enabled;
+			}
+		} else {
+			MeshRenderer[] renderers = this.gameObject.GetComponentsInChildren<MeshRenderer>();
+			foreach(MeshRenderer renderer in renderers) {
+				renderer.enabled = true;
+			}
+		}
 	}
 
 	public void doDamage(float damage) {
-		health -= damage;
-		if (health <= 0)
+		if(invinsTime <= 0) {
+			health -= damage;
+			if (health <= 0)
 						Destroy (this.gameObject);
+			invinsTime = 1f;
+		}
 	}
 
 
