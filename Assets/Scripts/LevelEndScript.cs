@@ -14,8 +14,10 @@ public class LevelEndScript : MonoBehaviour {
 	void Update () {
 		int enemiesLeft = 0;
 		foreach(GameObject spawner in spawners) {
-			spawnEntity spawn = spawner.GetComponent<spawnEntity>();
-			if(spawn != null) enemiesLeft += spawn.getNumLeft();
+			spawnEntity[] spawns = spawner.GetComponents<spawnEntity>();
+			foreach(spawnEntity spawn in spawns) {
+				if(spawn != null) enemiesLeft += spawn.getNumLeft();
+			}
 		}
 		Debug.Log (enemiesLeft);
 		if(enemiesLeft == 0) {
