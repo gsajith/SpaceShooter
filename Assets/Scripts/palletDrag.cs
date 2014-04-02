@@ -11,6 +11,11 @@ public class palletDrag : MonoBehaviour {
 	void Start() {
 
 	}
+
+	void onMouseUp() {
+		//make the portion stay attached to cursor until click
+	}
+
 	void OnMouseDown() {
 		if(canDrag) {
 			GameObject original = this.gameObject;
@@ -32,6 +37,7 @@ public class palletDrag : MonoBehaviour {
 			Vector2 position = new Vector2(gridx, gridy);
 			portion.loc = position;
 			portion.type = type;
+
 			GameObject spawn = new GameObject("ShotSpawn");
 			GameObject shotSpawn = new GameObject();
 			if(type==1 || type==2 || type==3) {

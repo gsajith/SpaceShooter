@@ -39,7 +39,13 @@ public class MoveBlock : MonoBehaviour {
 			Vector3 point = gameObject.transform.position;
 			point.x = round (point.x);
 			point.y = round (point.y);
+
+			if(point.x <= -2.25f || point.x >= 2.25f
+			   || point.y <= -1.25f || point.y >= 3.25f)
+				DestroyObject(gameObject);
+			else
 			gameObject.transform.position = point;
+
 		}
 
 	}
