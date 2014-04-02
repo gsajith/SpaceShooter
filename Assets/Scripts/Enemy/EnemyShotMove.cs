@@ -11,11 +11,8 @@ public class EnemyShotMove : MonoBehaviour {
 		if(other.transform.parent != null){
 			PlayerMoveScript isPlayer = other.transform.parent.GetComponent<PlayerMoveScript> ();
 			if(isPlayer != null) {
-				isPlayer.health -= damage;
+				isPlayer.doDamage(damage);
 				Destroy (this.gameObject);
-				if(isPlayer.health <= 0) {
-					Destroy (other.transform.parent.gameObject);
-				}
 			}
 		}
 	}

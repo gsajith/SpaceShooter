@@ -10,14 +10,13 @@ public class Boundary
 public class PlayerMoveScript : MonoBehaviour
 {
 	public float speed = 1f;
-	public float timeLeft;
-	public float tilt;
 	public Boundary boundary;
 	public float fireRate;
 	public List<GameObject> shots = new List<GameObject> ();
 	public List<Transform> shotSpawns = new List<Transform>();
 	public float health = 10;
 	static public float healthbar = 10;
+	float invinsTime = 0;
 
 	private float nextFire;
 
@@ -42,6 +41,13 @@ public class PlayerMoveScript : MonoBehaviour
 
 
 	}
+
+	public void doDamage(float damage) {
+		health -= damage;
+		if (health <= 0)
+						Destroy (this.gameObject);
+	}
+
 
 	void FixedUpdate ()	{
 

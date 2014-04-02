@@ -42,17 +42,18 @@ public class ButtonMouseoverScript : MonoBehaviour {
 			foreach(ShipPart part in ShipMakerScript.shipParts) {
 				if(part.obj != null) {
 					DestroyImmediate(part.obj.collider);
+					part.obj.tag = "Player";
 					BoxCollider2D bc =part.obj.AddComponent ("BoxCollider2D") as BoxCollider2D;
 					Vector3 t = bc.transform.localScale;
 					t.y = 20;
 					bc.transform.localScale = t;
 				} 
 			}
-			//var location = "Assets/Resources/PlayerPrefab.prefab";
-			//PrefabUtility.CreatePrefab(location, 
-			//                           playerPrefab, 
-			//                           ReplacePrefabOptions.ReplaceNameBased);
-			DontDestroyOnLoad(playerPrefab);
+			var location = "Assets/Resources/PlayerPrefab.prefab";
+			PrefabUtility.CreatePrefab(location, 
+			                           playerPrefab, 
+			                           ReplacePrefabOptions.ReplaceNameBased);
+			//DontDestroyOnLoad(playerPrefab);
 		}
 		Application.LoadLevel(sceneNum);
 		
