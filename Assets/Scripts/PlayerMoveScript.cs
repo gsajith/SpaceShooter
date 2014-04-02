@@ -44,10 +44,18 @@ public class PlayerMoveScript : MonoBehaviour
 			foreach(MeshRenderer renderer in renderers) {
 				renderer.enabled = !renderer.enabled;
 			}
+			BoxCollider2D[] colliders = this.gameObject.GetComponentsInChildren<BoxCollider2D>();
+			foreach(BoxCollider2D collider in colliders) {
+				collider.enabled = false;
+			}
 		} else {
 			MeshRenderer[] renderers = this.gameObject.GetComponentsInChildren<MeshRenderer>();
 			foreach(MeshRenderer renderer in renderers) {
 				renderer.enabled = true;
+			}
+			BoxCollider2D[] colliders = this.gameObject.GetComponentsInChildren<BoxCollider2D>();
+			foreach(BoxCollider2D collider in colliders) {
+				collider.enabled = true;
 			}
 		}
 	}
