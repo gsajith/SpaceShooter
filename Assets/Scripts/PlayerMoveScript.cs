@@ -9,7 +9,6 @@ public class Boundary
 
 public class PlayerMoveScript : MonoBehaviour
 {
-	public GridBuilder grid = new GridBuilder ();
 	public float speed = 1f;
 	public float timeLeft;
 	public float tilt;
@@ -23,14 +22,8 @@ public class PlayerMoveScript : MonoBehaviour
 	private float nextFire;
 
 	void Start() {
-		timeLeft = speed;
-		grid.sizeGrid (6.0f, 10.0f);
-		grid.positionGrid (-2.5f, -8.5f);
-		grid.specifyGrid (60,100);
 		Vector3 pos = new Vector3 (rigidbody2D.transform.position.x, rigidbody2D.transform.position.y, rigidbody2D.transform.position.z);
 
-		pos = grid.alignToGrid (pos);
-		//pos = grid.placeOnGrid (30, 30);
 		rigidbody2D.transform.position = new Vector3 (pos.x, pos.y, pos.z);
 
 	}
@@ -52,30 +45,7 @@ public class PlayerMoveScript : MonoBehaviour
 
 	void FixedUpdate ()	{
 
-		timeLeft -= Time.deltaTime;
-
-		if(timeLeft < 0) {
-			Vector3 pos = new Vector3 (rigidbody2D.transform.position.x, rigidbody2D.transform.position.y, rigidbody2D.transform.position.z);
-			if(Input.GetKey (KeyCode.UpArrow)) {
-				pos = grid.moveUp (pos);
-			} 
-			
-			if(Input.GetKey (KeyCode.LeftArrow)) {
-				pos = grid.moveLeft (pos);
-			} 
-			
-			if(Input.GetKey (KeyCode.DownArrow)) {
-				pos = grid.moveDown (pos);
-			} 
-			
-			if(Input.GetKey (KeyCode.RightArrow)) {
-				pos = grid.moveRight (pos);
-			} 
-			
-			rigidbody2D.transform.position = new Vector3 (pos.x, pos.y, pos.z);
-			timeLeft = speed;
-		}
-		/*float moveHorizontal = Input.GetAxis ("Horizontal");
+		float moveHorizontal = Input.GetAxis ("Horizontal");
 		float moveVertical = Input.GetAxis ("Vertical");
 		
 		Vector2 movement = new Vector2 (moveHorizontal, moveVertical);
@@ -87,6 +57,6 @@ public class PlayerMoveScript : MonoBehaviour
 				Mathf.Clamp (rigidbody2D.transform.position.y, boundary.yMin, boundary.yMax),
 				rigidbody2D.transform.position.z);
 
-			}*/
+			
 	}
 }

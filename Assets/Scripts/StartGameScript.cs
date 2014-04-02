@@ -14,7 +14,11 @@ public class StartGameScript : MonoBehaviour {
 		PlayerMoveScript pms = playerPrefab.GetComponent<PlayerMoveScript> ();
 		if(pms != null) {
 			pms.fireRate = .3f;
-			pms.speed = .03f;
+			pms.speed = 3f;
+			pms.boundary.xMin = -2.5f;
+			pms.boundary.xMax = 3.5f;
+			pms.boundary.yMin = -8.5f;
+			pms.boundary.yMax = 1.5f;
 		}
 		HealthBar healthBar = healthBarObject.GetComponent<HealthBar> ();
 		if(healthBar != null) {
