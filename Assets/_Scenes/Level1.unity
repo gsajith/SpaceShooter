@@ -423,6 +423,10 @@ Prefab:
       propertyPath: m_Name
       value: Boss1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5eb705a38c6664f4a90f73a4f6c9c31a, type: 2}
+      propertyPath: m_TagString
+      value: boss
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400000, guid: 5eb705a38c6664f4a90f73a4f6c9c31a, type: 2}
     - {fileID: 11400002, guid: 5eb705a38c6664f4a90f73a4f6c9c31a, type: 2}
@@ -444,7 +448,7 @@ GameObject:
   - 114: {fileID: 1105317327}
   m_Layer: 0
   m_Name: Boss1
-  m_TagString: Untagged
+  m_TagString: boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -461,7 +465,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activated: 0
-  hp: 0
+  hp: 100
+  shot: {fileID: 100000, guid: 5465e3dd35413a446abe9ef3b353ca5b, type: 2}
+  firerate: .5
 --- !u!212 &1105317330
 SpriteRenderer:
   m_ObjectHideFlags: 0
