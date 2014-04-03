@@ -21,7 +21,7 @@ public class ShotMoveScript : MonoBehaviour {
 		Enemy_MoveDirection enemyScript = other.GetComponent<Enemy_MoveDirection> ();
 		if(enemyScript != null) {
 			enemyScript.health -= damage;
-			Destroy (other.gameObject);
+			if(enemyScript.health <= 0) Destroy (other.gameObject);
 			Destroy (this.gameObject);
 			ScoreScript.score += enemyScript.bounty;
 		}

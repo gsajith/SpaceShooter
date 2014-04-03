@@ -65,7 +65,7 @@ public class PlayerMoveScript : MonoBehaviour
 			health -= damage;
 			if (health <= 0)
 						Destroy (this.gameObject);
-			invinsTime = 1f;
+			invinsTime = .5f;
 		}
 	}
 

@@ -27,7 +27,7 @@ public class Enemy_MoveDirection : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.gameObject.tag == "Player"){
 			PlayerMoveScript isPlayer = other.transform.parent.GetComponent<PlayerMoveScript> ();
-			isPlayer.doDamage(health);
+			isPlayer.doDamage(this.gameObject.GetComponent<EnemyShoot>().shot.GetComponent<EnemyShotMove>().damage);
 		}
 	}
 
