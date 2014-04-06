@@ -6,6 +6,10 @@ public class ManpowerT1Script : MonoBehaviour {
 	public Sprite nonHighlight;
 	public Sprite highlight;
 
+	public int MPAdd = 1;
+	public int MoneyAdd = 0;
+	public int MineralAdd = 0;
+
 	void Start () {
 		
 	}

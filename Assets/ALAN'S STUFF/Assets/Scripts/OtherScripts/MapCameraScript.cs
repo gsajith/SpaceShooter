@@ -40,7 +40,7 @@ public class MapCameraScript : MonoBehaviour {
 		}
 
 
-		if (Input.GetKey (KeyCode.Z) && (camera.orthographicSize < 4.8f)) {
+		if (Input.GetKey (KeyCode.Z) && (camera.orthographicSize < 6f)) {
 			camera.orthographicSize = camera.orthographicSize + 0.1f;
 		}
 
