@@ -1725,7 +1725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activated: 0
-  hp: 100
+  hp: 10
   shot: {fileID: 100000, guid: 5465e3dd35413a446abe9ef3b353ca5b, type: 2}
   firerate: .5
 --- !u!212 &1105317330

@@ -19,8 +19,8 @@ public class PlayerMoveScript : MonoBehaviour
 	float invinsTime = 0;
 
 	int playerNum = 0;
-	string currentPlanet;
-	string attackingPlanet;
+	int currentPlanet;
+	int attackingPlanet;
 
 	private float nextFire;
 
@@ -36,15 +36,15 @@ public class PlayerMoveScript : MonoBehaviour
 		}
 
 		if (PlayerPrefs.HasKey ("CurrentPlanet")) {
-			currentPlanet = PlayerPrefs.GetString ("CurrentPlanet");
+			currentPlanet = PlayerPrefs.GetInt ("CurrentPlanet");
 		} else {
-			currentPlanet = "Planet0";
+			currentPlanet = 0;
 		}
 
 		if (PlayerPrefs.HasKey ("AttackingPlanet")) {
-			attackingPlanet = PlayerPrefs.GetString ("AttackingPlanet");
+			attackingPlanet = PlayerPrefs.GetInt ("AttackingPlanet");
 		} else {
-			attackingPlanet = "Planet0";
+			attackingPlanet = 0;
 		}
 	}
 
@@ -93,8 +93,9 @@ public class PlayerMoveScript : MonoBehaviour
 
 	void OnDestroy() {
 		if(health > 0) {
-			PlayerPrefs.SetInt (attackingPlanet, playerNum);
-			PlayerPrefs.SetString (currentPlanet, attackingPlanet);
+			Debug.Log ("Setting player vals, Planet"+attackingPlanet + " " + playerNum + ", CurrentPlanet: " + attackingPlanet);
+			PlayerPrefs.SetInt ("Planet"+attackingPlanet, playerNum);
+			PlayerPrefs.SetInt ("CurrentPlanet", attackingPlanet);
 		}
 	}
 

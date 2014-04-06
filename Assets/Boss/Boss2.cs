@@ -75,7 +75,7 @@ public class Boss2 : MonoBehaviour {
 			}
 			if(hp <= 0) {
 				waitForSecs(timer);
-				Application.LoadLevel("Menu");
+				Application.LoadLevel(3);
 			}
 		}
 	}
