@@ -49,6 +49,9 @@ public class PlayerMoveScript : MonoBehaviour
 	}
 
 	void Update() {
+		if (Input.GetKey (KeyCode.F2)) {
+			doDamage (2000);
+		}
 		if (Input.GetButton("Fire1") && Time.time > nextFire)
 		{
 			int i = 0;
@@ -86,14 +89,34 @@ public class PlayerMoveScript : MonoBehaviour
 			health -= damage;
 			if (health <= 0) {
 				Destroy (this.gameObject);
+				Application.LoadLevel (3);
 			}
 			invinsTime = .5f;
 		}
 	}
 
 	void OnDestroy() {
+		Debug.Log ("health: " + health);
 		if(health > 0) {
 			Debug.Log ("Setting player vals, Planet"+attackingPlanet + " " + playerNum + ", CurrentPlanet: " + attackingPlanet);
+			if(playerNum == 1) {
+				if(PlayerPrefs.GetInt ("Player2Planet") == attackingPlanet) {
+					if(PlayerPrefs.GetInt ("Player2HomePlanet") != attackingPlanet) {
+						PlayerPrefs.SetInt ("Player2Planet", PlayerPrefs.GetInt ("Player2HomePlanet"));
+					} else {
+						PlayerPrefs.SetInt ("Player2Planet", 0);
+					}
+				}
+			}
+			if(playerNum == 2) {
+				if(PlayerPrefs.GetInt ("Player1Planet") == attackingPlanet) {
+					if(PlayerPrefs.GetInt ("Player1HomePlanet") != attackingPlanet) {
+						PlayerPrefs.SetInt ("Player1Planet", PlayerPrefs.GetInt ("Player1HomePlanet"));
+					} else {
+						PlayerPrefs.SetInt ("Player1Planet", 0);
+					}
+				}
+			}
 			PlayerPrefs.SetInt ("Planet"+attackingPlanet, playerNum);
 			PlayerPrefs.SetInt ("Player"+playerNum+"Planet", attackingPlanet);
 		}
