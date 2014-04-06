@@ -62,6 +62,8 @@ public class Boss4 : MonoBehaviour {
 			hp -= 1f;
 		}
 		if(hp <= 0) {
+			LevelController lvctrl = GameObject.FindObjectOfType<LevelController>();
+			lvctrl.trigger = true;
 			Destroy(gameObject);
 		}
 	}

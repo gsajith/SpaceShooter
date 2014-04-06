@@ -19,7 +19,7 @@ public class LevelEndScript : MonoBehaviour {
 				if(spawn != null) enemiesLeft += spawn.getNumLeft();
 			}
 		}
-		Debug.Log (enemiesLeft);
+		//Debug.Log (enemiesLeft);
 		if(enemiesLeft == 0) {
 			//Debug.Log ("level done!");	
 			//waitForSecs(3);	
