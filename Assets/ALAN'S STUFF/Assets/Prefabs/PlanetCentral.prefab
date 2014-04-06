@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
-  - 114: {fileID: 11400000}
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400002}
   m_Layer: 0
@@ -402,19 +401,6 @@ Animator:
   m_ApplyRootMotion: 0
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c111262c56a5a10478325ef190bf0632, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: 095bdc6ceacf64041b7d9f313d1f2484, type: 3}
-  highlight: {fileID: 21300000, guid: 29c94459469c77647ab22aeb3bb0ebd4, type: 3}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -429,6 +415,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: 095bdc6ceacf64041b7d9f313d1f2484, type: 3}
+  highlight: {fileID: 21300000, guid: 29c94459469c77647ab22aeb3bb0ebd4, type: 3}
+  MP: 2
+  Money: 2
+  Mineral: 2
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1

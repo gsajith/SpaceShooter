@@ -83,7 +83,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 5309279}
   - 212: {fileID: 5309283}
-  - 114: {fileID: 5309282}
   - 61: {fileID: 5309281}
   - 114: {fileID: 5309280}
   m_Layer: 0
@@ -125,6 +124,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
+  highlight: {fileID: 21300000, guid: 61f8404962a0eb9448a140e1eb091662, type: 3}
+  MP: 0
+  Money: 0
+  Mineral: 1
 --- !u!61 &5309281
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -137,20 +141,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &5309282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 777df8299e8292b44984bf322a190271,
-    type: 2}
-  m_PrefabInternal: {fileID: 567049648}
-  m_GameObject: {fileID: 5309278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0e654705fb00654e8a18c2a503d2b68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
-  highlight: {fileID: 21300000, guid: 61f8404962a0eb9448a140e1eb091662, type: 3}
 --- !u!212 &5309283
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -303,7 +293,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 38738022}
   - 212: {fileID: 38738023}
-  - 114: {fileID: 38738025}
   - 61: {fileID: 38738024}
   - 114: {fileID: 38738026}
   m_Layer: 0
@@ -366,20 +355,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &38738025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: c75b51c4c098ca14587bb506f8e738a8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1736654204}
-  m_GameObject: {fileID: 38738021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31ee7929d8a3405479b8d184b255778e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
-  highlight: {fileID: 21300000, guid: 732e6a2cfd33e6b49953858a808d71f6, type: 3}
 --- !u!114 &38738026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,6 +370,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
+  highlight: {fileID: 21300000, guid: 732e6a2cfd33e6b49953858a808d71f6, type: 3}
+  MP: 2
+  Money: 0
+  Mineral: 0
 --- !u!1 &42888795
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,7 +400,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 42888795}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 988185a504895f446b35ed20274823c6, type: 3}
+  m_Script: {fileID: 11500000, guid: 06fff3ec2cbf4a646b09a0b63bb12c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!132 &42888797
@@ -720,7 +700,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 76925342}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 988185a504895f446b35ed20274823c6, type: 3}
+  m_Script: {fileID: 11500000, guid: d559e75546182d64cba8c82d6cb2ab1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!132 &76925344
@@ -765,7 +745,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 86033417}
-  - 114: {fileID: 86033416}
   - 114: {fileID: 86033415}
   m_Layer: 0
   m_Name: DummyPlanet
@@ -789,20 +768,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
---- !u!114 &86033416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: d2f78a4217ddc8b44b76c40576230bc1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1616890407}
-  m_GameObject: {fileID: 86033414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c111262c56a5a10478325ef190bf0632, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   nonHighlight: {fileID: 0}
   highlight: {fileID: 0}
+  MP: 0
+  Money: 0
+  Mineral: 0
 --- !u!4 &86033417
 Transform:
   m_ObjectHideFlags: 0
@@ -823,7 +793,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 86039022}
   - 212: {fileID: 86039023}
-  - 114: {fileID: 86039025}
   - 61: {fileID: 86039024}
   - 114: {fileID: 86039027}
   m_Layer: 0
@@ -886,20 +855,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &86039025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a6b44bf6157a8fe4f88244abe377f6b7,
-    type: 2}
-  m_PrefabInternal: {fileID: 514096639}
-  m_GameObject: {fileID: 86039021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 184c0eef6ca87b44e9910914a3f65239, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
-  highlight: {fileID: 21300000, guid: 651babb9f27cca74095f2f9cf1f5322f, type: 3}
 --- !u!114 &86039027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -915,6 +870,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
+  highlight: {fileID: 21300000, guid: 651babb9f27cca74095f2f9cf1f5322f, type: 3}
+  MP: 0
+  Money: 2
+  Mineral: 0
 --- !u!1 &90659367
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,7 +884,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 90659368}
   - 212: {fileID: 90659369}
-  - 114: {fileID: 90659371}
   - 61: {fileID: 90659370}
   - 114: {fileID: 90659373}
   m_Layer: 0
@@ -987,20 +946,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &90659371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a6b44bf6157a8fe4f88244abe377f6b7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1552674949}
-  m_GameObject: {fileID: 90659367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 184c0eef6ca87b44e9910914a3f65239, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
-  highlight: {fileID: 21300000, guid: 651babb9f27cca74095f2f9cf1f5322f, type: 3}
 --- !u!114 &90659373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1016,6 +961,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
+  highlight: {fileID: 21300000, guid: 651babb9f27cca74095f2f9cf1f5322f, type: 3}
+  MP: 0
+  Money: 2
+  Mineral: 0
 --- !u!1 &103010988
 GameObject:
   m_ObjectHideFlags: 0
@@ -2097,7 +2047,7 @@ GameObject:
   - 4: {fileID: 269578024}
   - 131: {fileID: 269578023}
   m_Layer: 0
-  m_Name: GUI
+  m_Name: GUIP2top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3359,6 +3309,68 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 9.99999975e-05, y: .00999999046}
   m_Center: {x: -.495246053, y: .533756018}
+--- !u!1 &435231617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 435231618}
+  - 132: {fileID: 435231620}
+  - 114: {fileID: 435231619}
+  m_Layer: 0
+  m_Name: GUImoney
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &435231618
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 435231617}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 2060182194}
+--- !u!114 &435231619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 435231617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 988185a504895f446b35ed20274823c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!132 &435231620
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 435231617}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Gui Text
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: -21.2800007, y: 327.23999}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 91afb76e2aa82db41aa25468c33e2590, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 25
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278301253
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &453608338
 GameObject:
   m_ObjectHideFlags: 0
@@ -3434,7 +3446,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 459064659}
   - 212: {fileID: 459064660}
-  - 114: {fileID: 459064662}
   - 61: {fileID: 459064661}
   - 114: {fileID: 459064664}
   m_Layer: 0
@@ -3497,20 +3508,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &459064662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 3674d6d62380aa541a35c8a53744a16f,
-    type: 2}
-  m_PrefabInternal: {fileID: 711862526}
-  m_GameObject: {fileID: 459064658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 260062d3c50b4da4782de0e092cd6e26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
-  highlight: {fileID: 21300000, guid: 6cac656b7f8d6f840b9f3088b8dcebde, type: 3}
 --- !u!114 &459064664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3526,6 +3523,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
+  highlight: {fileID: 21300000, guid: 6cac656b7f8d6f840b9f3088b8dcebde, type: 3}
+  MP: 0
+  Money: 1
+  Mineral: 0
 --- !u!1 &459587681
 GameObject:
   m_ObjectHideFlags: 0
@@ -3860,7 +3862,6 @@ GameObject:
   - 4: {fileID: 472992932}
   - 212: {fileID: 472992931}
   - 61: {fileID: 472992934}
-  - 114: {fileID: 472992933}
   - 114: {fileID: 472992935}
   m_Layer: 0
   m_Name: PlanetPlayer
@@ -3910,20 +3911,6 @@ Transform:
   - {fileID: 103010989}
   - {fileID: 1285565308}
   m_Father: {fileID: 580323160}
---- !u!114 &472992933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: f3667c2b103ab7648ac5084162e7d931,
-    type: 2}
-  m_PrefabInternal: {fileID: 1609230065}
-  m_GameObject: {fileID: 472992930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 004ab8104e1c1f441a3ecf17730b5368, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: d594507ae413a294c9faca9428d0450a, type: 3}
-  highlight: {fileID: 21300000, guid: c8460e63e3e4bbe4d978dc7d8ab571ce, type: 3}
 --- !u!61 &472992934
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3951,6 +3938,73 @@ MonoBehaviour:
   occupy: 1
   ship: 1
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: d594507ae413a294c9faca9428d0450a, type: 3}
+  highlight: {fileID: 21300000, guid: c8460e63e3e4bbe4d978dc7d8ab571ce, type: 3}
+  MP: 0
+  Money: 0
+  Mineral: 0
+--- !u!1 &492066376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 492066377}
+  - 132: {fileID: 492066379}
+  - 114: {fileID: 492066378}
+  m_Layer: 0
+  m_Name: GUImanpower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &492066377
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 492066376}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 2060182194}
+--- !u!114 &492066378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 492066376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d5fd452ba3da944a7f881a24310f7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!132 &492066379
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 492066376}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Gui Text
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: -142.820007, y: 327.23999}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 91afb76e2aa82db41aa25468c33e2590, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 25
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278301253
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1001 &514096639
 Prefab:
   m_ObjectHideFlags: 0
@@ -4180,6 +4234,68 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: .00999999978, y: .00999999978}
   m_Center: {x: .5, y: -.5}
+--- !u!1 &531836814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 531836817}
+  - 132: {fileID: 531836816}
+  - 114: {fileID: 531836815}
+  m_Layer: 0
+  m_Name: GUImineral
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &531836815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 531836814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7500b386189829b4c997e4edb04a68e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!132 &531836816
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 531836814}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Gui Text
+  m_Anchor: 0
+  m_Alignment: 0
+  m_PixelOffset: {x: 106.650002, y: 327.23999}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: 91afb76e2aa82db41aa25468c33e2590, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 25
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278301253
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &531836817
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 531836814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 2060182194}
 --- !u!1 &540399128
 GameObject:
   m_ObjectHideFlags: 0
@@ -4706,25 +4822,25 @@ Transform:
   - {fileID: 86033417}
   - {fileID: 709393412}
   - {fileID: 1190671550}
-  - {fileID: 585680853}
-  - {fileID: 800292150}
   - {fileID: 1341854621}
-  - {fileID: 1531742164}
+  - {fileID: 800292150}
+  - {fileID: 585680853}
   - {fileID: 38738022}
+  - {fileID: 1531742164}
   - {fileID: 2024535552}
   - {fileID: 5309279}
   - {fileID: 1828447292}
   - {fileID: 1091003185}
-  - {fileID: 1340471610}
   - {fileID: 593969650}
+  - {fileID: 1340471610}
   - {fileID: 614089565}
+  - {fileID: 1436238739}
   - {fileID: 459064659}
   - {fileID: 1486186053}
-  - {fileID: 1436238739}
-  - {fileID: 86039022}
-  - {fileID: 90659368}
   - {fileID: 881242221}
+  - {fileID: 86039022}
   - {fileID: 1720911863}
+  - {fileID: 90659368}
   - {fileID: 1948945678}
   - {fileID: 472992932}
   m_Father: {fileID: 0}
@@ -4737,7 +4853,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 585680853}
   - 212: {fileID: 585680854}
-  - 114: {fileID: 585680856}
   - 61: {fileID: 585680855}
   - 114: {fileID: 585680857}
   m_Layer: 0
@@ -4800,23 +4915,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &585680856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 0ab03881ab7e864499340085d48a8cbc,
-    type: 2}
-  m_PrefabInternal: {fileID: 1611406862}
-  m_GameObject: {fileID: 585680852}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01bcbc967474ac4ab9520f366a84c96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
-  highlight: {fileID: 21300000, guid: a88a80c0fbc20ae448c9bba790a321c9, type: 3}
-  MPAdd: 1
-  MoneyAdd: 0
-  MineralAdd: 0
 --- !u!114 &585680857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4832,6 +4930,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
+  highlight: {fileID: 21300000, guid: a88a80c0fbc20ae448c9bba790a321c9, type: 3}
+  MP: 1
+  Money: 0
+  Mineral: 0
 --- !u!1 &593969649
 GameObject:
   m_ObjectHideFlags: 0
@@ -4841,7 +4944,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 593969650}
   - 212: {fileID: 593969651}
-  - 114: {fileID: 593969653}
   - 61: {fileID: 593969652}
   - 114: {fileID: 593969655}
   m_Layer: 0
@@ -4904,20 +5006,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &593969653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: ad84069e9d5d48841ba288c2954e69db,
-    type: 2}
-  m_PrefabInternal: {fileID: 1535209547}
-  m_GameObject: {fileID: 593969649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28d172c03abdf0e49a3f2030c17019ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
-  highlight: {fileID: 21300000, guid: b1f9eb64d69908e4eaf0518afe19c76d, type: 3}
 --- !u!114 &593969655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4933,6 +5021,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
+  highlight: {fileID: 21300000, guid: b1f9eb64d69908e4eaf0518afe19c76d, type: 3}
+  MP: 0
+  Money: 0
+  Mineral: 2
 --- !u!1 &598560015
 GameObject:
   m_ObjectHideFlags: 0
@@ -5008,7 +5101,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 614089565}
   - 212: {fileID: 614089566}
-  - 114: {fileID: 614089568}
   - 61: {fileID: 614089567}
   - 114: {fileID: 614089570}
   m_Layer: 0
@@ -5071,20 +5163,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &614089568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 534047d8691b18344b9fdfdbfcd747d6,
-    type: 2}
-  m_PrefabInternal: {fileID: 884221373}
-  m_GameObject: {fileID: 614089564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b17783de23d9624c91e2646b6213962, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
-  highlight: {fileID: 21300000, guid: 204a97e8fd67c424ab135bcb299a8c04, type: 3}
 --- !u!114 &614089570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5100,6 +5178,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
+  highlight: {fileID: 21300000, guid: 204a97e8fd67c424ab135bcb299a8c04, type: 3}
+  MP: 0
+  Money: 0
+  Mineral: 3
 --- !u!1 &646516591
 GameObject:
   m_ObjectHideFlags: 0
@@ -5347,7 +5430,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 709393412}
   - 212: {fileID: 709393416}
-  - 114: {fileID: 709393415}
   - 61: {fileID: 709393414}
   - 114: {fileID: 709393413}
   m_Layer: 0
@@ -5389,6 +5471,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: 095bdc6ceacf64041b7d9f313d1f2484, type: 3}
+  highlight: {fileID: 21300000, guid: 29c94459469c77647ab22aeb3bb0ebd4, type: 3}
+  MP: 2
+  Money: 2
+  Mineral: 2
 --- !u!61 &709393414
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5401,20 +5488,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &709393415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4a289d60e43d8e04f807ceb45c3d39aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 906931616}
-  m_GameObject: {fileID: 709393411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c111262c56a5a10478325ef190bf0632, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: 095bdc6ceacf64041b7d9f313d1f2484, type: 3}
-  highlight: {fileID: 21300000, guid: 29c94459469c77647ab22aeb3bb0ebd4, type: 3}
 --- !u!212 &709393416
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6147,7 +6220,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 800292150}
   - 212: {fileID: 800292151}
-  - 114: {fileID: 800292153}
   - 61: {fileID: 800292152}
   - 114: {fileID: 800292154}
   m_Layer: 0
@@ -6210,23 +6282,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &800292153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 0ab03881ab7e864499340085d48a8cbc,
-    type: 2}
-  m_PrefabInternal: {fileID: 1692567910}
-  m_GameObject: {fileID: 800292149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01bcbc967474ac4ab9520f366a84c96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
-  highlight: {fileID: 21300000, guid: a88a80c0fbc20ae448c9bba790a321c9, type: 3}
-  MPAdd: 1
-  MoneyAdd: 0
-  MineralAdd: 0
 --- !u!114 &800292154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6242,6 +6297,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
+  highlight: {fileID: 21300000, guid: a88a80c0fbc20ae448c9bba790a321c9, type: 3}
+  MP: 1
+  Money: 0
+  Mineral: 0
 --- !u!1 &804605372
 GameObject:
   m_ObjectHideFlags: 0
@@ -6985,7 +7045,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 881242221}
   - 212: {fileID: 881242222}
-  - 114: {fileID: 881242224}
   - 61: {fileID: 881242223}
   - 114: {fileID: 881242226}
   m_Layer: 0
@@ -7048,20 +7107,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &881242224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a6b44bf6157a8fe4f88244abe377f6b7,
-    type: 2}
-  m_PrefabInternal: {fileID: 2101491213}
-  m_GameObject: {fileID: 881242220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 184c0eef6ca87b44e9910914a3f65239, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
-  highlight: {fileID: 21300000, guid: 651babb9f27cca74095f2f9cf1f5322f, type: 3}
 --- !u!114 &881242226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7077,6 +7122,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
+  highlight: {fileID: 21300000, guid: 651babb9f27cca74095f2f9cf1f5322f, type: 3}
+  MP: 0
+  Money: 2
+  Mineral: 0
 --- !u!1001 &884221373
 Prefab:
   m_ObjectHideFlags: 0
@@ -8474,7 +8524,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1091003185}
   - 212: {fileID: 1091003186}
-  - 114: {fileID: 1091003188}
   - 61: {fileID: 1091003187}
   - 114: {fileID: 1091003189}
   m_Layer: 0
@@ -8537,20 +8586,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &1091003188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: ad84069e9d5d48841ba288c2954e69db,
-    type: 2}
-  m_PrefabInternal: {fileID: 574664357}
-  m_GameObject: {fileID: 1091003184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28d172c03abdf0e49a3f2030c17019ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
-  highlight: {fileID: 21300000, guid: b1f9eb64d69908e4eaf0518afe19c76d, type: 3}
 --- !u!114 &1091003189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8566,6 +8601,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
+  highlight: {fileID: 21300000, guid: b1f9eb64d69908e4eaf0518afe19c76d, type: 3}
+  MP: 0
+  Money: 0
+  Mineral: 2
 --- !u!1 &1100387247
 GameObject:
   m_ObjectHideFlags: 0
@@ -9652,7 +9692,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1190671550}
   - 212: {fileID: 1190671549}
-  - 114: {fileID: 1190671551}
   - 61: {fileID: 1190671552}
   - 114: {fileID: 1190671553}
   m_Layer: 0
@@ -9703,20 +9742,6 @@ Transform:
   - {fileID: 1160783209}
   - {fileID: 1152874661}
   m_Father: {fileID: 580323160}
---- !u!114 &1190671551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: b6839106be5189044864bb03ee009b40,
-    type: 2}
-  m_PrefabInternal: {fileID: 1503070234}
-  m_GameObject: {fileID: 1190671548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eddcfee4d828aad42b563eba1e2e6c1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: 0b8006c572e586d49b53d45214e52d33, type: 3}
-  highlight: {fileID: 21300000, guid: efc1ef79ebc58034bba456e72abe323b, type: 3}
 --- !u!61 &1190671552
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9744,6 +9769,11 @@ MonoBehaviour:
   occupy: 2
   ship: 2
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: 0b8006c572e586d49b53d45214e52d33, type: 3}
+  highlight: {fileID: 21300000, guid: efc1ef79ebc58034bba456e72abe323b, type: 3}
+  MP: 0
+  Money: 0
+  Mineral: 0
 --- !u!1 &1190720817
 GameObject:
   m_ObjectHideFlags: 0
@@ -10870,7 +10900,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1340471610}
   - 212: {fileID: 1340471611}
-  - 114: {fileID: 1340471613}
   - 61: {fileID: 1340471612}
   - 114: {fileID: 1340471615}
   m_Layer: 0
@@ -10933,20 +10962,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &1340471613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: ad84069e9d5d48841ba288c2954e69db,
-    type: 2}
-  m_PrefabInternal: {fileID: 743898360}
-  m_GameObject: {fileID: 1340471609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28d172c03abdf0e49a3f2030c17019ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
-  highlight: {fileID: 21300000, guid: b1f9eb64d69908e4eaf0518afe19c76d, type: 3}
 --- !u!114 &1340471615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10962,6 +10977,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
+  highlight: {fileID: 21300000, guid: b1f9eb64d69908e4eaf0518afe19c76d, type: 3}
+  MP: 0
+  Money: 0
+  Mineral: 2
 --- !u!1 &1341854620
 GameObject:
   m_ObjectHideFlags: 0
@@ -10971,7 +10991,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1341854621}
   - 212: {fileID: 1341854622}
-  - 114: {fileID: 1341854624}
   - 61: {fileID: 1341854623}
   - 114: {fileID: 1341854625}
   m_Layer: 0
@@ -11034,23 +11053,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &1341854624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 0ab03881ab7e864499340085d48a8cbc,
-    type: 2}
-  m_PrefabInternal: {fileID: 2122687721}
-  m_GameObject: {fileID: 1341854620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01bcbc967474ac4ab9520f366a84c96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
-  highlight: {fileID: 21300000, guid: a88a80c0fbc20ae448c9bba790a321c9, type: 3}
-  MPAdd: 1
-  MoneyAdd: 0
-  MineralAdd: 0
 --- !u!114 &1341854625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11066,6 +11068,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
+  highlight: {fileID: 21300000, guid: a88a80c0fbc20ae448c9bba790a321c9, type: 3}
+  MP: 1
+  Money: 0
+  Mineral: 0
 --- !u!1 &1353490137
 GameObject:
   m_ObjectHideFlags: 0
@@ -11551,7 +11558,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1436238739}
   - 212: {fileID: 1436238740}
-  - 114: {fileID: 1436238742}
   - 61: {fileID: 1436238741}
   - 114: {fileID: 1436238744}
   m_Layer: 0
@@ -11614,20 +11620,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &1436238742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 3674d6d62380aa541a35c8a53744a16f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1825885050}
-  m_GameObject: {fileID: 1436238738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 260062d3c50b4da4782de0e092cd6e26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
-  highlight: {fileID: 21300000, guid: 6cac656b7f8d6f840b9f3088b8dcebde, type: 3}
 --- !u!114 &1436238744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11643,6 +11635,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
+  highlight: {fileID: 21300000, guid: 6cac656b7f8d6f840b9f3088b8dcebde, type: 3}
+  MP: 0
+  Money: 1
+  Mineral: 0
 --- !u!1 &1453302495
 GameObject:
   m_ObjectHideFlags: 0
@@ -12009,7 +12006,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1486186053}
   - 212: {fileID: 1486186054}
-  - 114: {fileID: 1486186056}
   - 61: {fileID: 1486186055}
   - 114: {fileID: 1486186058}
   m_Layer: 0
@@ -12072,20 +12068,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &1486186056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 3674d6d62380aa541a35c8a53744a16f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1576402264}
-  m_GameObject: {fileID: 1486186052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 260062d3c50b4da4782de0e092cd6e26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
-  highlight: {fileID: 21300000, guid: 6cac656b7f8d6f840b9f3088b8dcebde, type: 3}
 --- !u!114 &1486186058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12101,6 +12083,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
+  highlight: {fileID: 21300000, guid: 6cac656b7f8d6f840b9f3088b8dcebde, type: 3}
+  MP: 0
+  Money: 1
+  Mineral: 0
 --- !u!1001 &1503070234
 Prefab:
   m_ObjectHideFlags: 0
@@ -12597,7 +12584,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1531742164}
   - 212: {fileID: 1531742165}
-  - 114: {fileID: 1531742167}
   - 61: {fileID: 1531742166}
   - 114: {fileID: 1531742168}
   m_Layer: 0
@@ -12660,20 +12646,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &1531742167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: c75b51c4c098ca14587bb506f8e738a8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1023299673}
-  m_GameObject: {fileID: 1531742163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31ee7929d8a3405479b8d184b255778e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
-  highlight: {fileID: 21300000, guid: 732e6a2cfd33e6b49953858a808d71f6, type: 3}
 --- !u!114 &1531742168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12689,6 +12661,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
+  highlight: {fileID: 21300000, guid: 732e6a2cfd33e6b49953858a808d71f6, type: 3}
+  MP: 2
+  Money: 0
+  Mineral: 0
 --- !u!1001 &1535209547
 Prefab:
   m_ObjectHideFlags: 0
@@ -13887,7 +13864,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1720911863}
   - 212: {fileID: 1720911864}
-  - 114: {fileID: 1720911866}
   - 61: {fileID: 1720911865}
   - 114: {fileID: 1720911868}
   m_Layer: 0
@@ -13950,20 +13926,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &1720911866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: a6b44bf6157a8fe4f88244abe377f6b7,
-    type: 2}
-  m_PrefabInternal: {fileID: 2116124443}
-  m_GameObject: {fileID: 1720911862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 184c0eef6ca87b44e9910914a3f65239, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
-  highlight: {fileID: 21300000, guid: 651babb9f27cca74095f2f9cf1f5322f, type: 3}
 --- !u!114 &1720911868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13979,6 +13941,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
+  highlight: {fileID: 21300000, guid: 651babb9f27cca74095f2f9cf1f5322f, type: 3}
+  MP: 0
+  Money: 2
+  Mineral: 0
 --- !u!1001 &1736654204
 Prefab:
   m_ObjectHideFlags: 0
@@ -14924,7 +14891,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1828447292}
   - 212: {fileID: 1828447293}
-  - 114: {fileID: 1828447294}
   - 61: {fileID: 1828447295}
   - 114: {fileID: 1828447296}
   m_Layer: 0
@@ -14975,20 +14941,6 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &1828447294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 777df8299e8292b44984bf322a190271,
-    type: 2}
-  m_PrefabInternal: {fileID: 2118324163}
-  m_GameObject: {fileID: 1828447291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0e654705fb00654e8a18c2a503d2b68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
-  highlight: {fileID: 21300000, guid: 61f8404962a0eb9448a140e1eb091662, type: 3}
 --- !u!61 &1828447295
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15016,6 +14968,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
+  highlight: {fileID: 21300000, guid: 61f8404962a0eb9448a140e1eb091662, type: 3}
+  MP: 0
+  Money: 0
+  Mineral: 1
 --- !u!1 &1835917907
 GameObject:
   m_ObjectHideFlags: 0
@@ -16116,7 +16073,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1948945678}
   - 212: {fileID: 1948945683}
-  - 114: {fileID: 1948945681}
   - 61: {fileID: 1948945680}
   - 114: {fileID: 1948945679}
   m_Layer: 0
@@ -16158,6 +16114,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
+  highlight: {fileID: 21300000, guid: 602ecf83998239e4fa2480528523068e, type: 3}
+  MP: 0
+  Money: 3
+  Mineral: 0
 --- !u!61 &1948945680
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16170,20 +16131,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &1948945681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 97ed2cf19740e624abf072599c6337bf,
-    type: 2}
-  m_PrefabInternal: {fileID: 2111662049}
-  m_GameObject: {fileID: 1948945677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43c1c99dadccff443ab93cff22667367, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
-  highlight: {fileID: 21300000, guid: 602ecf83998239e4fa2480528523068e, type: 3}
 --- !u!212 &1948945683
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17215,7 +17162,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 2024535552}
   - 212: {fileID: 2024535553}
-  - 114: {fileID: 2024535555}
   - 61: {fileID: 2024535554}
   - 114: {fileID: 2024535556}
   m_Layer: 0
@@ -17278,20 +17224,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .5, y: .5}
   m_Center: {x: 0, y: 0}
---- !u!114 &2024535555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: c75b51c4c098ca14587bb506f8e738a8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1804205544}
-  m_GameObject: {fileID: 2024535551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31ee7929d8a3405479b8d184b255778e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
-  highlight: {fileID: 21300000, guid: 732e6a2cfd33e6b49953858a808d71f6, type: 3}
 --- !u!114 &2024535556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17307,6 +17239,11 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
+  highlight: {fileID: 21300000, guid: 732e6a2cfd33e6b49953858a808d71f6, type: 3}
+  MP: 2
+  Money: 0
+  Mineral: 0
 --- !u!1 &2039456261
 GameObject:
   m_ObjectHideFlags: 0
@@ -17512,6 +17449,55 @@ MonoBehaviour:
   playerOrbitSprite: {fileID: 21300000, guid: 377484c42355e9d4f8e4e56395b11c8f, type: 3}
   playerOrbitController: {fileID: 9100000, guid: b716264fc8582bb459124ea04ba03b62,
     type: 2}
+--- !u!1 &2060182193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2060182194}
+  - 131: {fileID: 2060182195}
+  m_Layer: 0
+  m_Name: GUIP1bottom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2060182194
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2060182193}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: -.382037163, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children:
+  - {fileID: 492066377}
+  - {fileID: 435231618}
+  - {fileID: 531836817}
+  m_Father: {fileID: 0}
+--- !u!131 &2060182195
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2060182193}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: dbde8fcb2c39f474395a14019cb63fe0, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: -207.720001
+    y: 276.140015
+    width: 414.559998
+    height: 80.3199997
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &2065148350
 GameObject:
   m_ObjectHideFlags: 0
@@ -18516,7 +18502,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2125144607}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2d5fd452ba3da944a7f881a24310f7d, type: 3}
+  m_Script: {fileID: 11500000, guid: ff0f4443f4cff9044b6a8a0ca3729b2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!132 &2125144609

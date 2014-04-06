@@ -18,6 +18,10 @@ public class PlayerMoveScript : MonoBehaviour
 	static public float healthbar = 10;
 	float invinsTime = 0;
 
+	int playerNum = 0;
+	string currentPlanet;
+	string attackingPlanet;
+
 	private float nextFire;
 
 	void Start() {
@@ -25,6 +29,23 @@ public class PlayerMoveScript : MonoBehaviour
 
 		rigidbody2D.transform.position = new Vector3 (pos.x, pos.y, pos.z);
 
+		if (PlayerPrefs.HasKey ("AttackingPlayer")) {
+			playerNum = PlayerPrefs.GetInt ("AttackingPlayer");
+		} else {
+			playerNum = 0;
+		}
+
+		if (PlayerPrefs.HasKey ("CurrentPlanet")) {
+			currentPlanet = PlayerPrefs.GetString ("CurrentPlanet");
+		} else {
+			currentPlanet = "Planet0";
+		}
+
+		if (PlayerPrefs.HasKey ("AttackingPlanet")) {
+			attackingPlanet = PlayerPrefs.GetString ("AttackingPlanet");
+		} else {
+			attackingPlanet = "Planet0";
+		}
 	}
 
 	void Update() {
@@ -63,9 +84,17 @@ public class PlayerMoveScript : MonoBehaviour
 	public void doDamage(float damage) {
 		if(invinsTime <= 0) {
 			health -= damage;
-			if (health <= 0)
-						Destroy (this.gameObject);
+			if (health <= 0) {
+				Destroy (this.gameObject);
+			}
 			invinsTime = .5f;
+		}
+	}
+
+	void OnDestroy() {
+		if(health > 0) {
+			PlayerPrefs.SetInt (attackingPlanet, playerNum);
+			PlayerPrefs.SetString (currentPlanet, attackingPlanet);
 		}
 	}
 

@@ -10,7 +10,9 @@ public class MPDisplayScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		guiText.text = (GameControlScript.playerMP.ToString()) + "(+" + (GameControlScript.playerMPAdd.ToString()) + ")";
-	
+
+			guiText.text = (GameControlScript.playerMP.ToString ()) + "(+" + (GameControlScript.playerMPAdd.ToString ()) + ")";
+			guiText.color = Color.green;
+		
 	}
 }

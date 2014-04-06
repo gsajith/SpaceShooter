@@ -10,7 +10,11 @@ public class MoneyDisplayScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		guiText.text = (GameControlScript.playerMoney.ToString()) + "(+" + (GameControlScript.playerMoneyAdd.ToString()) + ")";
+	
+			guiText.text = (GameControlScript.playerMoney.ToString ()) + "(+" + (GameControlScript.playerMoneyAdd.ToString ()) + ")";
+			guiText.color = Color.green;
+		
+
 
 	}
 }
