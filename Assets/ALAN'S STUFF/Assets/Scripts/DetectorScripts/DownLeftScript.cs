@@ -28,11 +28,11 @@ public class DownLeftScript : MonoBehaviour {
 				GetComponent<SpriteRenderer>().sprite = neutralArrow;
 				GetComponent<Animator>().runtimeAnimatorController = neutralController; 
 			}
-			if(adjacentPlanetStatus == 1){
+			if(adjacentPlanetStatus == GameControlScript.currentPlayer){
 				GetComponent<SpriteRenderer>().sprite = friendlyArrow;
 				GetComponent<Animator>().runtimeAnimatorController = friendlyController;
 			}
-			if(adjacentPlanetStatus == 2){
+			if(adjacentPlanetStatus != GameControlScript.currentPlayer && adjacentPlanetStatus != 0 && adjacentPlanetStatus != -1){
 				GetComponent<SpriteRenderer>().sprite = enemyArrow;
 				GetComponent<Animator>().runtimeAnimatorController = enemyController; 
 			}
