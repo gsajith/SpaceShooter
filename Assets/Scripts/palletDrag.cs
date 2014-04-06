@@ -8,7 +8,8 @@ public class palletDrag : MonoBehaviour {
 	public int type;
 	public GameObject ShipPrefab;
 	public GameObject shotType;
-	void Start() {
+
+	public void Start(){
 
 	}
 
@@ -19,7 +20,7 @@ public class palletDrag : MonoBehaviour {
 	void OnMouseDown() {
 		if(canDrag) {
 			GameObject original = this.gameObject;
-			Vector3 pos = original.transform.position;
+			Vector3 pos = new Vector3(0f, 3.8f, 0f);//original.transform.position;
 			pos.z = 0.0f;
 			GameObject clone = Instantiate(original, pos, original.transform.rotation) as GameObject;
 			clone.transform.parent = ShipPrefab.transform;
@@ -61,6 +62,7 @@ public class palletDrag : MonoBehaviour {
 			}
 
 			ShipMakerScript.shipParts.Add(portion);
+		
 		}
 	}
 
