@@ -55,7 +55,7 @@ public class ButtonMouseoverScript : MonoBehaviour {
 			                           ReplacePrefabOptions.ReplaceNameBased);
 			//DontDestroyOnLoad(playerPrefab);
 		}
-		Application.LoadLevel(sceneNum);
+		Application.LoadLevel(3);
 		
 	}
 

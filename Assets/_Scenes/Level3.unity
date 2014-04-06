@@ -953,7 +953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f66ba691169d644f9df30364cdf02ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 100000, guid: a32466e24aa0dfe438982b8bb4680f39, type: 2}
+  enemy: {fileID: 100000, guid: a6225909d92c12e4a92e5ec724444ee9, type: 2}
   number: 1
   time:
   - 22

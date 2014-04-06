@@ -29,7 +29,7 @@ public class StartGameScript : MonoBehaviour {
 
 	void Update () {
 		if(Input.GetKeyDown (KeyCode.F1)) {
-			Application.LoadLevel(sceneNum);
+			Application.LoadLevel(2);
 		}
 	}
 }

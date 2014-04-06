@@ -50,7 +50,7 @@ public class PlayerMoveScript : MonoBehaviour
 
 	void Update() {
 		if (Input.GetKey (KeyCode.F2)) {
-			doDamage (2000);
+			doDamage (health);
 		}
 		if (Input.GetButton("Fire1") && Time.time > nextFire)
 		{
