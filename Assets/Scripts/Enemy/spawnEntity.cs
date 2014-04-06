@@ -14,15 +14,14 @@ public class spawnEntity : MonoBehaviour {
 
 	void Start(){
 			nextSpawn = Time.time + spawnRate;
-			Random.seed = numToSpawn;
 			numLeft = numToSpawn;
 	}
 
-	void Update(){
+	void FixedUpdate(){
 		spawnDelay -= Time.deltaTime;
 		if (spawnDelay <= 0 && nextSpawn < Time.time && numToSpawn > 0) {
 			numToSpawn--;
-			nextSpawn = Time.time + spawnRate + Random.value*(spawnRate/4.0f);
+			nextSpawn = Time.time + spawnRate;
 			GameObject enemy = Instantiate (entity, transform.position, transform.rotation) as GameObject;
 			Enemy_MoveDirection moveScript = enemy.GetComponent<Enemy_MoveDirection>();
 			if(moveScript != null) {

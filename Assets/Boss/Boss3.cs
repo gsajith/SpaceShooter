@@ -1,7 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Boss1 : MonoBehaviour {
+/*
+ * 	 Dashing down
+ */
+
+public class Boss3 : MonoBehaviour {
+
 	public bool activated;
 	public float hp;
 	public GameObject shot;
@@ -12,12 +17,17 @@ public class Boss1 : MonoBehaviour {
 	bool dir;
 	bool special = false;
 	float special_timer = 0;
-
+	Vector3 special_pos;
+	int dash_stat; //0 for dashing, 1 for returning, 2 for finish
+	float wait_timer;
+	
 	// Use this for initialization
 	void Start () {
-		activated = false;
-		hp = 100f;
+		activated = true;
+		hp = 500f;
 		dir = false;
+		dash_stat = 0;
+		wait_timer = 0;
 	}
 	
 	// Update is called once per frame
@@ -50,31 +60,61 @@ public class Boss1 : MonoBehaviour {
 						if(fired == 10) {
 							special = true;
 							special_timer = 0;
+							special_pos = transform.position;
 							fired = 0;
 						}
 					}
 				}
 				else{
-					special_timer += Time.deltaTime;
-					Instantiate (shot, transform.position, transform.rotation);
-					if(special_timer >= 3f)
-						special = false;
+					Dash ();
 				}
 			}
 			if(hp <= 0) {
 				waitForSecs(timer);
-				Application.LoadLevel(1);
+				Application.LoadLevel("Menu");
 			}
 		}
 	}
-	
+
+	void Dash() {
+		if(dash_stat==0) {
+			if(wait_timer<1.5f) wait_timer+=Time.deltaTime;
+			else{
+				if(transform.position.y>-6f) {
+					Vector3 temp = transform.position;
+					temp.y -= 0.3f;
+					transform.position = temp;
+				}
+				else {
+					transform.position = special_pos + new Vector3(0, 2f, 0);
+					dash_stat = 1;
+				}
+			}
+		}
+		else if(dash_stat ==1) {
+			if(transform.position.y>4f){
+				Vector3 temp = transform.position;
+				temp.y -= 0.3f;
+				transform.position = temp;
+			}
+			else {
+				dash_stat = 2;
+			}
+		}
+		else {
+			special = false;
+			wait_timer = 0;
+			dash_stat = 0;
+		}
+	}
+
 	IEnumerator waitForSecs(int secs) {
 		yield return new WaitForSeconds (secs);
 	}
-
+	
 	void OnTriggerEnter2D(Collider2D other) {
 		if(activated)
-			if(other.tag == "bullets")
+			if(other.tag == "player_shot")
 				hp-=1f;
 	}
 }

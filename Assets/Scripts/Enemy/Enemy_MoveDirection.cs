@@ -16,9 +16,18 @@ public class Enemy_MoveDirection : MonoBehaviour {
 	}
 
 	void OnDestroy() {
-		spawnEntity spawnScript = spawner.GetComponent<spawnEntity> ();
-		if(spawnScript != null) {
-			spawnScript.removeOneEnemy();
+		if(spawner != null) {
+			spawnEntity spawnScript = spawner.GetComponent<spawnEntity> ();
+			if(spawnScript != null) {
+				spawnScript.removeOneEnemy();
+			}
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D other){
+		if(other.gameObject.tag == "Player"){
+			PlayerMoveScript isPlayer = other.transform.parent.GetComponent<PlayerMoveScript> ();
+			isPlayer.doDamage(this.gameObject.GetComponent<EnemyShoot>().shot.GetComponent<EnemyShotMove>().damage);
 		}
 	}
 

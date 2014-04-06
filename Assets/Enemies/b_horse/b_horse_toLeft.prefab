@@ -69,7 +69,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shot: {fileID: 100000, guid: 5465e3dd35413a446abe9ef3b353ca5b, type: 2}
-  firerate: 1
+  firerate: 3
+  shoots: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -84,8 +85,9 @@ MonoBehaviour:
   h: 3
   v: -1
   speed: 1
-  health: 1
+  health: 3
   bounty: 100
+  spawner: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
