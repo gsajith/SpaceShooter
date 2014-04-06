@@ -614,7 +614,7 @@ MonoBehaviour:
   time:
   - 10
   location:
-  - {x: 0, y: 5}
+  - {x: 0, y: 6}
 --- !u!1 &1482103219
 GameObject:
   m_ObjectHideFlags: 0

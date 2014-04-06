@@ -13,6 +13,7 @@ public class Boss2 : MonoBehaviour {
 	bool dir;
 	bool special = false;
 	float special_timer = 0;
+	Vector3 special_pos;
 	
 	// Use this for initialization
 	void Start () {
@@ -57,7 +58,13 @@ public class Boss2 : MonoBehaviour {
 				}
 				else{
 					special_timer += Time.deltaTime;
-					Instantiate (shot, transform.position, transform.rotation);
+					nextshot += Time.deltaTime;
+					if (nextshot > firerate) {
+						nextshot = 0f;
+						Instantiate (shot, transform.position, transform.rotation);
+						Instantiate (shot, transform.position+new Vector3(1f, 0, 0), transform.rotation);
+						Instantiate (shot, transform.position+new Vector3(-1f, 0, 0), transform.rotation);
+					}
 					if(special_timer >= 3f)
 						special = false;
 				}
