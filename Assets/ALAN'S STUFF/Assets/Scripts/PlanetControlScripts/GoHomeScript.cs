@@ -16,6 +16,7 @@ public class GoHomeScript : MonoBehaviour {
 		if (GameControlScript.goHome == playerHome  ) {
 
 			GetComponent<PlanetStatsScript>().ship = playerHome;
+			PlayerPrefs.SetInt ("Player"+playerHome+"Planet", GetComponent<PlanetStatsScript>().planetNum);
 
 			GameControlScript.goHome = 0;
 				}
