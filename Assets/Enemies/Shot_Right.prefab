@@ -14,7 +14,7 @@ GameObject:
   - 50: {fileID: 5000000}
   - 61: {fileID: 6100000}
   m_Layer: 0
-  m_Name: Shot_Clone
+  m_Name: Shot_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   damage: 1
-  direction: {x: 0, y: -1}
+  direction: {x: .5, y: -1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

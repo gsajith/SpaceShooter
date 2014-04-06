@@ -10,9 +10,9 @@ GameObject:
   - 4: {fileID: 400000}
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
-  - 114: {fileID: 11400000}
   - 50: {fileID: 5000000}
   - 61: {fileID: 6100000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: Shot_Follow
   m_TagString: Untagged
@@ -93,12 +93,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ad696a373d382b4183a1f69f30cd47f, type: 3}
+  m_Script: {fileID: 11500000, guid: 26f8b419c324c834cbac6b6118b56a7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  damage: 1
-  direction: {x: 0, y: -1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
