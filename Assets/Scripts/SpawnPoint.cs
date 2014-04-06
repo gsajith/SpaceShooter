@@ -8,16 +8,18 @@ public class SpawnPoint : MonoBehaviour {
 	public int number;
 	public List<float> time;
 	public List<Vector2> location;
+	float startup_time;
 	int i;
 	// Use this for initialization
 	void Start () {
 		i = 0;
+		startup_time = Time.time;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if(i<number){
-			if(Time.time >= time[i]) {
+			if(Time.time -startup_time>= time[i]) {
 				SpawnEnemy(i);
 				i++;
 			}
