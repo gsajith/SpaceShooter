@@ -46,7 +46,19 @@ public class PlanetStatsScript : MonoBehaviour {
 		
 		if (destination == true && GameControlScript.turnOver == false/***&& Ship & Occupation Status Will Set Up the Battle***/) {
 			//***The Following Settings Depend on the Outcome of the Battle***//
-			
+
+			if(ship != GameControlScript.currentPlayer && ship != 0)
+			{
+				if(GameControlScript.currentPlayer == 1)
+				{
+					GameControlScript.goHome = 2;
+				}
+				if(GameControlScript.currentPlayer == 2)
+				{
+					GameControlScript.goHome = 1;
+				}
+			}
+
 			if(occupy != GameControlScript.currentPlayer)
 			{
 				if(GameControlScript.currentPlayer == 1)
@@ -74,7 +86,8 @@ public class PlanetStatsScript : MonoBehaviour {
 					}	
 				}
 			}
-			
+
+
 			ship = GameControlScript.currentPlayer; 
 			occupy = GameControlScript.currentPlayer; 
 			destination = false; 

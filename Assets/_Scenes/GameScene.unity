@@ -3863,6 +3863,7 @@ GameObject:
   - 212: {fileID: 472992931}
   - 61: {fileID: 472992934}
   - 114: {fileID: 472992935}
+  - 114: {fileID: 472992933}
   m_Layer: 0
   m_Name: PlanetPlayer
   m_TagString: Planet
@@ -3911,6 +3912,19 @@ Transform:
   - {fileID: 103010989}
   - {fileID: 1285565308}
   m_Father: {fileID: 580323160}
+--- !u!114 &472992933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: f3667c2b103ab7648ac5084162e7d931,
+    type: 2}
+  m_PrefabInternal: {fileID: 1609230065}
+  m_GameObject: {fileID: 472992930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 433f2503ebf9c4b4d9131236eb59bd85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHome: 1
 --- !u!61 &472992934
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4822,25 +4836,25 @@ Transform:
   - {fileID: 86033417}
   - {fileID: 709393412}
   - {fileID: 1190671550}
-  - {fileID: 1341854621}
-  - {fileID: 800292150}
   - {fileID: 585680853}
-  - {fileID: 38738022}
+  - {fileID: 800292150}
+  - {fileID: 1341854621}
   - {fileID: 1531742164}
+  - {fileID: 38738022}
   - {fileID: 2024535552}
   - {fileID: 5309279}
   - {fileID: 1828447292}
   - {fileID: 1091003185}
-  - {fileID: 593969650}
   - {fileID: 1340471610}
+  - {fileID: 593969650}
   - {fileID: 614089565}
-  - {fileID: 1436238739}
   - {fileID: 459064659}
   - {fileID: 1486186053}
-  - {fileID: 881242221}
+  - {fileID: 1436238739}
   - {fileID: 86039022}
-  - {fileID: 1720911863}
   - {fileID: 90659368}
+  - {fileID: 881242221}
+  - {fileID: 1720911863}
   - {fileID: 1948945678}
   - {fileID: 472992932}
   m_Father: {fileID: 0}
@@ -9694,6 +9708,7 @@ GameObject:
   - 212: {fileID: 1190671549}
   - 61: {fileID: 1190671552}
   - 114: {fileID: 1190671553}
+  - 114: {fileID: 1190671551}
   m_Layer: 0
   m_Name: PlanetEnemy
   m_TagString: Planet
@@ -9742,6 +9757,19 @@ Transform:
   - {fileID: 1160783209}
   - {fileID: 1152874661}
   m_Father: {fileID: 580323160}
+--- !u!114 &1190671551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: b6839106be5189044864bb03ee009b40,
+    type: 2}
+  m_PrefabInternal: {fileID: 1503070234}
+  m_GameObject: {fileID: 1190671548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 433f2503ebf9c4b4d9131236eb59bd85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHome: 2
 --- !u!61 &1190671552
 BoxCollider2D:
   m_ObjectHideFlags: 0

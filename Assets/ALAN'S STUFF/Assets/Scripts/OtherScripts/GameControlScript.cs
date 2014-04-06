@@ -27,9 +27,8 @@ public class GameControlScript : MonoBehaviour {
 
 	static public bool turnOver = false;
 
-
-
-
+	static public int homeShip = 0;
+	static public int goHome = 0;
 
 	// Use this for initialization
 	void Start () {
