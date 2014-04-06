@@ -3,6 +3,7 @@ using System.Collections;
 
 public class StartGameScript : MonoBehaviour {
 	public GameObject healthBarObject;
+	public int sceneNum = 2;
 
 	void Start () {
 		GameObject playerPrefab = Instantiate (Resources.Load ("PlayerPrefab", typeof(GameObject))) as GameObject;
@@ -27,6 +28,8 @@ public class StartGameScript : MonoBehaviour {
 	}
 
 	void Update () {
-	
+		if(Input.GetKeyDown (KeyCode.F1)) {
+			Application.LoadLevel(sceneNum);
+		}
 	}
 }
