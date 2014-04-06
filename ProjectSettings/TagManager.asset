@@ -5,6 +5,8 @@ TagManager:
   tags:
   - boss
   - bullets
+  - player_shot
+  - minion
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

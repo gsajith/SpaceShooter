@@ -24,7 +24,8 @@ public class LevelEndScript : MonoBehaviour {
 			//Debug.Log ("level done!");	
 			//waitForSecs(3);	
 			//Application.LoadLevel(1);
-			boss.activated = true;
+			if(boss!=null)
+				boss.activated = true;
 		}
 	}
 

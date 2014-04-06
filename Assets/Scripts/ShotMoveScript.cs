@@ -27,7 +27,8 @@ public class ShotMoveScript : MonoBehaviour {
 		}
 		if (other.tag == "boss")
 			Destroy (this.gameObject);
-
+		if(other.tag=="minion") //added by Michael 4/5, used by Level 2
+			Destroy(gameObject);
 	}
 
 	void Update()

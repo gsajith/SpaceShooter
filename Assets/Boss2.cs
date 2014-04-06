@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Boss1 : MonoBehaviour {
+public class Boss2 : MonoBehaviour {
+
 	public bool activated;
 	public float hp;
 	public GameObject shot;
@@ -12,10 +13,10 @@ public class Boss1 : MonoBehaviour {
 	bool dir;
 	bool special = false;
 	float special_timer = 0;
-
+	
 	// Use this for initialization
 	void Start () {
-		activated = false;
+		activated = true;
 		hp = 100f;
 		dir = false;
 	}
@@ -71,7 +72,7 @@ public class Boss1 : MonoBehaviour {
 	IEnumerator waitForSecs(int secs) {
 		yield return new WaitForSeconds (secs);
 	}
-
+	
 	void OnTriggerEnter2D(Collider2D other) {
 		if(activated)
 			if(other.tag == "player_shot")
