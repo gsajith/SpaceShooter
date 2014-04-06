@@ -74,8 +74,9 @@ public class Boss2 : MonoBehaviour {
 				}
 			}
 			if(hp <= 0) {
-				waitForSecs(timer);
-				Application.LoadLevel(3);
+				LevelController lvctrl = GameObject.FindObjectOfType<LevelController>();
+				lvctrl.trigger = true;
+				Destroy(gameObject);
 			}
 		}
 	}

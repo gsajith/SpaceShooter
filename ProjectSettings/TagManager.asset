@@ -7,6 +7,8 @@ TagManager:
   - bullets
   - player_shot
   - minion
+  - levelcontrol
+  - Planet
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

@@ -49,7 +49,7 @@ public class PlanetStatsScript : MonoBehaviour {
 		if (destination == true && GameControlScript.turnOver == false/***&& Ship & Occupation Status Will Set Up the Battle***/) {
 			//***The Following Settings Depend on the Outcome of the Battle***//
 
-			if(ship != GameControlScript.currentPlayer && ship != 0)
+			/*if(ship != GameControlScript.currentPlayer && ship != 0)
 			{
 				if(GameControlScript.currentPlayer == 1)
 				{
@@ -59,49 +59,21 @@ public class PlanetStatsScript : MonoBehaviour {
 				{
 					GameControlScript.goHome = 1;
 				}
-			}
+			}*/
 
-			if(occupy != GameControlScript.currentPlayer)
+			if(occupy != GameControlScript.currentPlayer && occupy != 0)
 			{
 				if(occupy != 0) {
 					PlayerPrefs.SetInt ("AttackingPlayer", GameControlScript.currentPlayer);
 					PlayerPrefs.SetInt ("AttackingPlanet", planetNum);
 					Application.LoadLevel(2);
 				} 
-				if(GameControlScript.currentPlayer == 1)
-				{
-					GameControlScript.playerMPAdd += MP;
-					GameControlScript.playerMoneyAdd += Money;
-					GameControlScript.playerMineralAdd += Mineral;
-					if(occupy == 2)
-					{
-						GameControlScript.enemyMPAdd -= MP;
-						GameControlScript.enemyMoneyAdd -= Money;
-						GameControlScript.enemyMineralAdd -= Mineral;
-					}	
-					PlayerPrefs.SetInt ("Player1Planet", planetNum);
-					PlayerPrefs.SetInt ("Planet"+planetNum, 1);
-					ship = GameControlScript.currentPlayer; 
-					occupy = GameControlScript.currentPlayer; 			 
-				}
-				else if(GameControlScript.currentPlayer == 2)
-				{
-					GameControlScript.enemyMPAdd += MP;
-					GameControlScript.enemyMoneyAdd += Money;
-					GameControlScript.enemyMineralAdd += Mineral;
-					if(occupy == 1)
-					{
-						GameControlScript.playerMPAdd -= MP;
-						GameControlScript.playerMoneyAdd -= Money;
-						GameControlScript.playerMineralAdd -= Mineral;
-					}	
-					PlayerPrefs.SetInt ("Player2Planet", planetNum);
-					PlayerPrefs.SetInt ("Planet"+planetNum, 2);
-					ship = GameControlScript.currentPlayer; 
-					occupy = GameControlScript.currentPlayer; 
-				}
+			} else {			
+				PlayerPrefs.SetInt ("Player"+GameControlScript.currentPlayer+"Planet", planetNum);
+				PlayerPrefs.SetInt ("Planet"+planetNum, GameControlScript.currentPlayer);
+				ship = GameControlScript.currentPlayer; 
+				occupy = GameControlScript.currentPlayer; 
 			}
-
 			destination = false; 
 			
 			//Deselecting Start Location Planet

@@ -70,8 +70,9 @@ public class Boss3 : MonoBehaviour {
 				}
 			}
 			if(hp <= 0) {
-				waitForSecs(timer);
-				Application.LoadLevel("Menu");
+				LevelController lvctrl = GameObject.FindObjectOfType<LevelController>();
+				lvctrl.trigger = true;
+				Destroy(gameObject);
 			}
 		}
 	}

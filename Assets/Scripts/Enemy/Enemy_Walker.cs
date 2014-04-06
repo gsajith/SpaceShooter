@@ -21,14 +21,14 @@ public class Enemy_Walker : MonoBehaviour {
 	void Update () {
 		if(left) {
 			Vector3 temp = transform.position;
-			temp.x += 0.05f;
+			temp.x += 0.03f;
 			transform.position = temp;
 			if(transform.position.x > 2.8f)
 				left = false;
 		}
 		else {
 			Vector3 temp = transform.position;
-			temp.x -= 0.05f;
+			temp.x -= 0.03f;
 			transform.position = temp;
 			if(transform.position.x < -2.8f)
 				left = true;
