@@ -124,6 +124,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
   highlight: {fileID: 21300000, guid: 61f8404962a0eb9448a140e1eb091662, type: 3}
   MP: 0
@@ -370,6 +372,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
   highlight: {fileID: 21300000, guid: 732e6a2cfd33e6b49953858a808d71f6, type: 3}
   MP: 2
@@ -768,6 +772,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 0}
   highlight: {fileID: 0}
   MP: 0
@@ -870,6 +876,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
   highlight: {fileID: 21300000, guid: 651babb9f27cca74095f2f9cf1f5322f, type: 3}
   MP: 0
@@ -961,6 +969,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
   highlight: {fileID: 21300000, guid: 651babb9f27cca74095f2f9cf1f5322f, type: 3}
   MP: 0
@@ -3523,6 +3533,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
   highlight: {fileID: 21300000, guid: 6cac656b7f8d6f840b9f3088b8dcebde, type: 3}
   MP: 0
@@ -3938,6 +3950,8 @@ MonoBehaviour:
   occupy: 1
   ship: 1
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: d594507ae413a294c9faca9428d0450a, type: 3}
   highlight: {fileID: 21300000, guid: c8460e63e3e4bbe4d978dc7d8ab571ce, type: 3}
   MP: 0
@@ -4822,25 +4836,25 @@ Transform:
   - {fileID: 86033417}
   - {fileID: 709393412}
   - {fileID: 1190671550}
-  - {fileID: 1341854621}
-  - {fileID: 800292150}
   - {fileID: 585680853}
-  - {fileID: 38738022}
+  - {fileID: 800292150}
+  - {fileID: 1341854621}
   - {fileID: 1531742164}
+  - {fileID: 38738022}
   - {fileID: 2024535552}
   - {fileID: 5309279}
   - {fileID: 1828447292}
   - {fileID: 1091003185}
-  - {fileID: 593969650}
   - {fileID: 1340471610}
+  - {fileID: 593969650}
   - {fileID: 614089565}
-  - {fileID: 1436238739}
   - {fileID: 459064659}
   - {fileID: 1486186053}
-  - {fileID: 881242221}
+  - {fileID: 1436238739}
   - {fileID: 86039022}
-  - {fileID: 1720911863}
   - {fileID: 90659368}
+  - {fileID: 881242221}
+  - {fileID: 1720911863}
   - {fileID: 1948945678}
   - {fileID: 472992932}
   m_Father: {fileID: 0}
@@ -4930,6 +4944,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
   highlight: {fileID: 21300000, guid: a88a80c0fbc20ae448c9bba790a321c9, type: 3}
   MP: 1
@@ -5021,6 +5037,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
   highlight: {fileID: 21300000, guid: b1f9eb64d69908e4eaf0518afe19c76d, type: 3}
   MP: 0
@@ -5178,6 +5196,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
   highlight: {fileID: 21300000, guid: 204a97e8fd67c424ab135bcb299a8c04, type: 3}
   MP: 0
@@ -5471,6 +5491,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 095bdc6ceacf64041b7d9f313d1f2484, type: 3}
   highlight: {fileID: 21300000, guid: 29c94459469c77647ab22aeb3bb0ebd4, type: 3}
   MP: 2
@@ -6297,6 +6319,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
   highlight: {fileID: 21300000, guid: a88a80c0fbc20ae448c9bba790a321c9, type: 3}
   MP: 1
@@ -7122,6 +7146,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
   highlight: {fileID: 21300000, guid: 651babb9f27cca74095f2f9cf1f5322f, type: 3}
   MP: 0
@@ -8601,6 +8627,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
   highlight: {fileID: 21300000, guid: b1f9eb64d69908e4eaf0518afe19c76d, type: 3}
   MP: 0
@@ -9769,6 +9797,8 @@ MonoBehaviour:
   occupy: 2
   ship: 2
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 0b8006c572e586d49b53d45214e52d33, type: 3}
   highlight: {fileID: 21300000, guid: efc1ef79ebc58034bba456e72abe323b, type: 3}
   MP: 0
@@ -10977,6 +11007,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
   highlight: {fileID: 21300000, guid: b1f9eb64d69908e4eaf0518afe19c76d, type: 3}
   MP: 0
@@ -11068,6 +11100,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
   highlight: {fileID: 21300000, guid: a88a80c0fbc20ae448c9bba790a321c9, type: 3}
   MP: 1
@@ -11635,6 +11669,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
   highlight: {fileID: 21300000, guid: 6cac656b7f8d6f840b9f3088b8dcebde, type: 3}
   MP: 0
@@ -12083,6 +12119,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
   highlight: {fileID: 21300000, guid: 6cac656b7f8d6f840b9f3088b8dcebde, type: 3}
   MP: 0
@@ -12661,6 +12699,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
   highlight: {fileID: 21300000, guid: 732e6a2cfd33e6b49953858a808d71f6, type: 3}
   MP: 2
@@ -13941,6 +13981,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
   highlight: {fileID: 21300000, guid: 651babb9f27cca74095f2f9cf1f5322f, type: 3}
   MP: 0
@@ -14968,6 +15010,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
   highlight: {fileID: 21300000, guid: 61f8404962a0eb9448a140e1eb091662, type: 3}
   MP: 0
@@ -15138,6 +15182,7 @@ GameObject:
   - 81: {fileID: 1870480603}
   - 114: {fileID: 1870480608}
   - 92: {fileID: 1870480609}
+  - 114: {fileID: 1870480605}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -15159,6 +15204,17 @@ Behaviour:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1870480602}
   m_Enabled: 1
+--- !u!114 &1870480605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1870480602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6939b910226174497d5b305b8acacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!20 &1870480606
 Camera:
   m_ObjectHideFlags: 0
@@ -16114,6 +16170,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
   highlight: {fileID: 21300000, guid: 602ecf83998239e4fa2480528523068e, type: 3}
   MP: 0
@@ -17239,6 +17297,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
   highlight: {fileID: 21300000, guid: 732e6a2cfd33e6b49953858a808d71f6, type: 3}
   MP: 2

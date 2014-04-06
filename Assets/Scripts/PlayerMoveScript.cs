@@ -95,7 +95,7 @@ public class PlayerMoveScript : MonoBehaviour
 		if(health > 0) {
 			Debug.Log ("Setting player vals, Planet"+attackingPlanet + " " + playerNum + ", CurrentPlanet: " + attackingPlanet);
 			PlayerPrefs.SetInt ("Planet"+attackingPlanet, playerNum);
-			PlayerPrefs.SetInt ("CurrentPlanet", attackingPlanet);
+			PlayerPrefs.SetInt ("Player"+playerNum+"Planet", attackingPlanet);
 		}
 	}
 

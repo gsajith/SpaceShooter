@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlanetStatsScript : MonoBehaviour {
 
-	public int occupy = 0;
+	public int occupy =0;
 	public int ship = 0;
 	public bool destination = false;
 	public string planetName = "";
@@ -51,6 +51,11 @@ public class PlanetStatsScript : MonoBehaviour {
 			
 			if(occupy != GameControlScript.currentPlayer)
 			{
+				if(occupy != 0) {
+					PlayerPrefs.SetInt ("AttackingPlayer", GameControlScript.currentPlayer);
+					PlayerPrefs.SetInt ("AttackingPlanet", planetNum);
+					Application.LoadLevel(2);
+				} 
 				if(GameControlScript.currentPlayer == 1)
 				{
 					GameControlScript.playerMPAdd += MP;
@@ -61,7 +66,11 @@ public class PlanetStatsScript : MonoBehaviour {
 						GameControlScript.enemyMPAdd -= MP;
 						GameControlScript.enemyMoneyAdd -= Money;
 						GameControlScript.enemyMineralAdd -= Mineral;
-					}				 
+					}	
+					PlayerPrefs.SetInt ("Player1Planet", planetNum);
+					PlayerPrefs.SetInt ("Planet"+planetNum, 1);
+					ship = GameControlScript.currentPlayer; 
+					occupy = GameControlScript.currentPlayer; 			 
 				}
 				else if(GameControlScript.currentPlayer == 2)
 				{
@@ -74,11 +83,13 @@ public class PlanetStatsScript : MonoBehaviour {
 						GameControlScript.playerMoneyAdd -= Money;
 						GameControlScript.playerMineralAdd -= Mineral;
 					}	
+					PlayerPrefs.SetInt ("Player2Planet", planetNum);
+					PlayerPrefs.SetInt ("Planet"+planetNum, 2);
+					ship = GameControlScript.currentPlayer; 
+					occupy = GameControlScript.currentPlayer; 
 				}
 			}
-			
-			ship = GameControlScript.currentPlayer; 
-			occupy = GameControlScript.currentPlayer; 
+
 			destination = false; 
 			
 			//Deselecting Start Location Planet
