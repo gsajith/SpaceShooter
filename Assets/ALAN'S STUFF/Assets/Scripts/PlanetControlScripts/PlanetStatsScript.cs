@@ -6,6 +6,8 @@ public class PlanetStatsScript : MonoBehaviour {
 	public int occupy = 0;
 	public int ship = 0;
 	public bool destination = false;
+	public string planetName = "";
+	public int planetNum = 0;
 
 	public Sprite nonHighlight;
 	public Sprite highlight;
