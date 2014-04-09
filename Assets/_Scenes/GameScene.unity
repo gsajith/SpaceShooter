@@ -124,6 +124,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
   highlight: {fileID: 21300000, guid: 61f8404962a0eb9448a140e1eb091662, type: 3}
   MP: 0
@@ -370,6 +372,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
   highlight: {fileID: 21300000, guid: 732e6a2cfd33e6b49953858a808d71f6, type: 3}
   MP: 2
@@ -768,6 +772,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 0}
   highlight: {fileID: 0}
   MP: 0
@@ -870,6 +876,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
   highlight: {fileID: 21300000, guid: 651babb9f27cca74095f2f9cf1f5322f, type: 3}
   MP: 0
@@ -961,6 +969,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
   highlight: {fileID: 21300000, guid: 651babb9f27cca74095f2f9cf1f5322f, type: 3}
   MP: 0
@@ -3523,6 +3533,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
   highlight: {fileID: 21300000, guid: 6cac656b7f8d6f840b9f3088b8dcebde, type: 3}
   MP: 0
@@ -3863,6 +3875,7 @@ GameObject:
   - 212: {fileID: 472992931}
   - 61: {fileID: 472992934}
   - 114: {fileID: 472992935}
+  - 114: {fileID: 472992933}
   m_Layer: 0
   m_Name: PlanetPlayer
   m_TagString: Planet
@@ -3911,6 +3924,19 @@ Transform:
   - {fileID: 103010989}
   - {fileID: 1285565308}
   m_Father: {fileID: 580323160}
+--- !u!114 &472992933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: f3667c2b103ab7648ac5084162e7d931,
+    type: 2}
+  m_PrefabInternal: {fileID: 1609230065}
+  m_GameObject: {fileID: 472992930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 433f2503ebf9c4b4d9131236eb59bd85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHome: 1
 --- !u!61 &472992934
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3938,6 +3964,8 @@ MonoBehaviour:
   occupy: 1
   ship: 1
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: d594507ae413a294c9faca9428d0450a, type: 3}
   highlight: {fileID: 21300000, guid: c8460e63e3e4bbe4d978dc7d8ab571ce, type: 3}
   MP: 0
@@ -4822,25 +4850,25 @@ Transform:
   - {fileID: 86033417}
   - {fileID: 709393412}
   - {fileID: 1190671550}
-  - {fileID: 1341854621}
-  - {fileID: 800292150}
   - {fileID: 585680853}
-  - {fileID: 38738022}
+  - {fileID: 800292150}
+  - {fileID: 1341854621}
   - {fileID: 1531742164}
+  - {fileID: 38738022}
   - {fileID: 2024535552}
   - {fileID: 5309279}
   - {fileID: 1828447292}
   - {fileID: 1091003185}
-  - {fileID: 593969650}
   - {fileID: 1340471610}
+  - {fileID: 593969650}
   - {fileID: 614089565}
-  - {fileID: 1436238739}
   - {fileID: 459064659}
   - {fileID: 1486186053}
-  - {fileID: 881242221}
+  - {fileID: 1436238739}
   - {fileID: 86039022}
-  - {fileID: 1720911863}
   - {fileID: 90659368}
+  - {fileID: 881242221}
+  - {fileID: 1720911863}
   - {fileID: 1948945678}
   - {fileID: 472992932}
   m_Father: {fileID: 0}
@@ -4930,6 +4958,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
   highlight: {fileID: 21300000, guid: a88a80c0fbc20ae448c9bba790a321c9, type: 3}
   MP: 1
@@ -5021,6 +5051,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
   highlight: {fileID: 21300000, guid: b1f9eb64d69908e4eaf0518afe19c76d, type: 3}
   MP: 0
@@ -5178,11 +5210,59 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
   highlight: {fileID: 21300000, guid: 204a97e8fd67c424ab135bcb299a8c04, type: 3}
   MP: 0
   Money: 0
   Mineral: 3
+--- !u!1 &638437244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 638437246}
+  - 131: {fileID: 638437245}
+  m_Layer: 2
+  m_Name: GUIBar1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &638437245
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 638437244}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: b1a5c256c2e860641b98726bdb703c37, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 33
+    height: 654
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &638437246
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 638437244}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .899999976, y: .0500000007, z: -.100000001}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &646516591
 GameObject:
   m_ObjectHideFlags: 0
@@ -5471,6 +5551,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 095bdc6ceacf64041b7d9f313d1f2484, type: 3}
   highlight: {fileID: 21300000, guid: 29c94459469c77647ab22aeb3bb0ebd4, type: 3}
   MP: 2
@@ -6297,6 +6379,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
   highlight: {fileID: 21300000, guid: a88a80c0fbc20ae448c9bba790a321c9, type: 3}
   MP: 1
@@ -7122,6 +7206,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
   highlight: {fileID: 21300000, guid: 651babb9f27cca74095f2f9cf1f5322f, type: 3}
   MP: 0
@@ -8601,6 +8687,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
   highlight: {fileID: 21300000, guid: b1f9eb64d69908e4eaf0518afe19c76d, type: 3}
   MP: 0
@@ -9694,6 +9782,7 @@ GameObject:
   - 212: {fileID: 1190671549}
   - 61: {fileID: 1190671552}
   - 114: {fileID: 1190671553}
+  - 114: {fileID: 1190671551}
   m_Layer: 0
   m_Name: PlanetEnemy
   m_TagString: Planet
@@ -9742,6 +9831,19 @@ Transform:
   - {fileID: 1160783209}
   - {fileID: 1152874661}
   m_Father: {fileID: 580323160}
+--- !u!114 &1190671551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: b6839106be5189044864bb03ee009b40,
+    type: 2}
+  m_PrefabInternal: {fileID: 1503070234}
+  m_GameObject: {fileID: 1190671548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 433f2503ebf9c4b4d9131236eb59bd85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHome: 2
 --- !u!61 &1190671552
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9769,6 +9871,8 @@ MonoBehaviour:
   occupy: 2
   ship: 2
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 0b8006c572e586d49b53d45214e52d33, type: 3}
   highlight: {fileID: 21300000, guid: efc1ef79ebc58034bba456e72abe323b, type: 3}
   MP: 0
@@ -10977,6 +11081,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
   highlight: {fileID: 21300000, guid: b1f9eb64d69908e4eaf0518afe19c76d, type: 3}
   MP: 0
@@ -11068,6 +11174,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
   highlight: {fileID: 21300000, guid: a88a80c0fbc20ae448c9bba790a321c9, type: 3}
   MP: 1
@@ -11635,6 +11743,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
   highlight: {fileID: 21300000, guid: 6cac656b7f8d6f840b9f3088b8dcebde, type: 3}
   MP: 0
@@ -12083,6 +12193,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
   highlight: {fileID: 21300000, guid: 6cac656b7f8d6f840b9f3088b8dcebde, type: 3}
   MP: 0
@@ -12661,6 +12773,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
   highlight: {fileID: 21300000, guid: 732e6a2cfd33e6b49953858a808d71f6, type: 3}
   MP: 2
@@ -13736,6 +13850,66 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 9.99999975e-05, y: .00999999046}
   m_Center: {x: -.495246053, y: .533756018}
+--- !u!1 &1704265343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1704265345}
+  - 131: {fileID: 1704265344}
+  - 114: {fileID: 1704265346}
+  m_Layer: 0
+  m_Name: GUIUpgradeButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &1704265344
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1704265343}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 8da9e6123496de343b15fe3235fbd5be, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 36
+    height: 234
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &1704265345
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1704265343}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .910000026, y: .508000016, z: -.200000003}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &1704265346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1704265343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03973b3cc4e80c74fba1abe5823d981f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonHighlight: {fileID: 2800000, guid: 8da9e6123496de343b15fe3235fbd5be, type: 3}
+  highlight: {fileID: 2800000, guid: e3bad9efde9c49c42b6cc00dfe13c269, type: 3}
 --- !u!1 &1709590872
 GameObject:
   m_ObjectHideFlags: 0
@@ -13941,6 +14115,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
   highlight: {fileID: 21300000, guid: 651babb9f27cca74095f2f9cf1f5322f, type: 3}
   MP: 0
@@ -14968,6 +15144,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: eda441add6bac7044929563797cb8913, type: 3}
   highlight: {fileID: 21300000, guid: 61f8404962a0eb9448a140e1eb091662, type: 3}
   MP: 0
@@ -15138,6 +15316,7 @@ GameObject:
   - 81: {fileID: 1870480603}
   - 114: {fileID: 1870480608}
   - 92: {fileID: 1870480609}
+  - 114: {fileID: 1870480605}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -15159,6 +15338,17 @@ Behaviour:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1870480602}
   m_Enabled: 1
+--- !u!114 &1870480605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1870480602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6939b910226174497d5b305b8acacb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!20 &1870480606
 Camera:
   m_ObjectHideFlags: 0
@@ -16114,6 +16304,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 78e3639db677b6847b18db5b657a5546, type: 3}
   highlight: {fileID: 21300000, guid: 602ecf83998239e4fa2480528523068e, type: 3}
   MP: 0
@@ -17239,6 +17431,8 @@ MonoBehaviour:
   occupy: 0
   ship: 0
   destination: 0
+  planetName: 
+  planetNum: 0
   nonHighlight: {fileID: 21300000, guid: 26afc9467b14ca84bb1245c21628b505, type: 3}
   highlight: {fileID: 21300000, guid: 732e6a2cfd33e6b49953858a808d71f6, type: 3}
   MP: 2
@@ -17683,6 +17877,66 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &2085754649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2085754651}
+  - 131: {fileID: 2085754650}
+  - 114: {fileID: 2085754652}
+  m_Layer: 0
+  m_Name: GUIRedTurn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &2085754650
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2085754649}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 4497fdc2fc68e7345911a785703ae09f, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 24
+    height: 130
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &2085754651
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2085754649}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0299999993, y: .670000017, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &2085754652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2085754649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5333438326df8a44b8c76f6cc24a207c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  red: {fileID: 2800000, guid: 4497fdc2fc68e7345911a785703ae09f, type: 3}
+  gray: {fileID: 2800000, guid: b8252c4725f06154984680190cae5189, type: 3}
 --- !u!1 &2087556727
 GameObject:
   m_ObjectHideFlags: 0
@@ -18166,6 +18420,126 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &2103975054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2103975056}
+  - 131: {fileID: 2103975055}
+  - 114: {fileID: 2103975057}
+  m_Layer: 0
+  m_Name: GUIGreenTurn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &2103975055
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2103975054}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: f95fe2457daca994fb3b34d29e35f69e, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 24
+    height: 130
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &2103975056
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2103975054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0299999993, y: .148000002, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &2103975057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2103975054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 048f6dfaa964e4f478d7871c56ae7be9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  green: {fileID: 2800000, guid: f95fe2457daca994fb3b34d29e35f69e, type: 3}
+  gray: {fileID: 2800000, guid: d97d690419bdb41479543c0b53f14f66, type: 3}
+--- !u!1 &2103997646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2103997648}
+  - 131: {fileID: 2103997647}
+  - 114: {fileID: 2103997649}
+  m_Layer: 0
+  m_Name: GUISkip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &2103997647
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2103997646}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: c789ce591ce0d4e4790bf0edae04bc81, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 25.5400009
+    height: 230.800003
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &2103997648
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2103997646}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0299999993, y: .340000004, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &2103997649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2103997646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fa2beec9efe8a24faa5d86c73a1a8f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonHighlight: {fileID: 2800000, guid: c789ce591ce0d4e4790bf0edae04bc81, type: 3}
+  highlight: {fileID: 2800000, guid: 42ec10708dd2a03448bbae63cb7ddf0c, type: 3}
 --- !u!1001 &2111662049
 Prefab:
   m_ObjectHideFlags: 0

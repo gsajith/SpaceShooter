@@ -29,12 +29,29 @@ public class DownRightScript : MonoBehaviour {
 				GetComponent<Animator>().runtimeAnimatorController = neutralController; 
 			}
 			if(adjacentPlanetStatus == GameControlScript.currentPlayer){
-				GetComponent<SpriteRenderer>().sprite = friendlyArrow;
-				GetComponent<Animator>().runtimeAnimatorController = friendlyController;
+				if(GameControlScript.currentPlayer == 1)
+				{
+					GetComponent<SpriteRenderer>().sprite = friendlyArrow;
+					GetComponent<Animator>().runtimeAnimatorController = friendlyController;
+				}
+				if(GameControlScript.currentPlayer == 2)
+				{
+					GetComponent<SpriteRenderer>().sprite = enemyArrow;
+					GetComponent<Animator>().runtimeAnimatorController = enemyController;
+				}
 			}
 			if(adjacentPlanetStatus != GameControlScript.currentPlayer && adjacentPlanetStatus != 0 && adjacentPlanetStatus != -1){
-				GetComponent<SpriteRenderer>().sprite = enemyArrow;
-				GetComponent<Animator>().runtimeAnimatorController = enemyController; 
+				if(GameControlScript.currentPlayer == 2)
+				{
+					GetComponent<SpriteRenderer>().sprite = friendlyArrow;
+					GetComponent<Animator>().runtimeAnimatorController = friendlyController;
+				}
+				if(GameControlScript.currentPlayer == 1)
+				{
+					GetComponent<SpriteRenderer>().sprite = enemyArrow;
+					GetComponent<Animator>().runtimeAnimatorController = enemyController;
+				}
+				
 			}
 		}
 		
