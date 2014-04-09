@@ -66,7 +66,7 @@ public class PlanetStatsScript : MonoBehaviour {
 				if(occupy != 0) {
 					PlayerPrefs.SetInt ("AttackingPlayer", GameControlScript.currentPlayer);
 					PlayerPrefs.SetInt ("AttackingPlanet", planetNum);
-					Application.LoadLevel(2);
+					Application.LoadLevel(4);
 				} 
 			} else {			
 				PlayerPrefs.SetInt ("Player"+GameControlScript.currentPlayer+"Planet", planetNum);

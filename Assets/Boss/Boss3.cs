@@ -24,7 +24,6 @@ public class Boss3 : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		activated = true;
-		hp = 500f;
 		dir = false;
 		dash_stat = 0;
 		wait_timer = 0;
