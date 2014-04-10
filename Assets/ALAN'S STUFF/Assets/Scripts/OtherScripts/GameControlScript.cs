@@ -37,7 +37,7 @@ public class GameControlScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		PlayerPrefs.SetInt ("CurrentPlayer", currentPlayer);
 	}
 
 	static public void updatePlayerRes()

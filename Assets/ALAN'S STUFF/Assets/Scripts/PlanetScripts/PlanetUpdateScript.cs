@@ -37,7 +37,6 @@ public class PlanetUpdateScript : MonoBehaviour {
 
 		for (int i = 0; i < numPlanets; i++) {
 			if (PlayerPrefs.HasKey ("Planet" + i)) {
-				Debug.Log ("Planet"+i+" exists = " + PlayerPrefs.GetInt ("Planet"+i));
 				planets [i].occupy = PlayerPrefs.GetInt ("Planet" + i);
 				if(planets[i].occupy == 1) {
 					GameControlScript.playerMineralAdd += planets[i].Mineral;
@@ -50,7 +49,6 @@ public class PlanetUpdateScript : MonoBehaviour {
 					GameControlScript.enemyMPAdd += planets[i].MP;
 				}
 			} else {
-				Debug.Log ("Planet"+i+" doesn't exist");
 				planets [i].occupy = 0;
 			}
 			planets[i].ship = 0;

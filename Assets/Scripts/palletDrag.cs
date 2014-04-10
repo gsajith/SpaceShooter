@@ -8,9 +8,9 @@ public class palletDrag : MonoBehaviour {
 	public int type;
 	public GameObject ShipPrefab;
 	public GameObject shotType;
+	public ShipPart portion;
 
 	public void Start(){
-
 	}
 
 	void onMouseUp() {
@@ -29,15 +29,17 @@ public class palletDrag : MonoBehaviour {
 
 			palletDrag colorScript = clone.GetComponent<palletDrag>();
 			colorScript.canDrag = false;
-
-			ShipPart portion = new ShipPart();
-			portion.obj = clone;
+			
+			colorScript.portion = Instantiate (GameObject.Find ("Ship").GetComponent<ShipPart>(), pos, GameObject.Find ("Ship").GetComponent<ShipPart>().transform.rotation) as ShipPart;
+			colorScript.portion.obj = clone;
 
 			float gridx = (pos.x + 2f)*2f; 
 			float gridy = (pos.y + 2f)*2f;
 			Vector2 position = new Vector2(gridx, gridy);
-			portion.loc = position;
-			portion.type = type;
+			colorScript.portion.loc = new Vector2(pos.x, pos.y);
+			Debug.Log (colorScript.portion.loc);
+			colorScript.portion.type = type;
+			Debug.Log (colorScript.portion.type);
 
 			GameObject spawn = new GameObject("ShotSpawn");
 			GameObject shotSpawn = new GameObject();
@@ -61,7 +63,7 @@ public class palletDrag : MonoBehaviour {
 				Destroy (shotSpawn);
 			}
 
-			ShipMakerScript.shipParts.Add(portion);
+			ShipMakerScript.shipParts.Add(colorScript.portion);
 		
 		}
 	}

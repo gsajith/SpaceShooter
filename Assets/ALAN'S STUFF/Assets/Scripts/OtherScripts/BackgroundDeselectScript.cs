@@ -30,5 +30,5 @@ public class BackgroundDeselectScript : MonoBehaviour {
 		GameControlScript.selectedPlanet = null;
 
 
-		}
+	}
 }

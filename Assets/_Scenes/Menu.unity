@@ -85,7 +85,7 @@ GameObject:
   - 33: {fileID: 45196003}
   - 23: {fileID: 45196002}
   m_Layer: 0
-  m_Name: GunLeft
+  m_Name: GunLeftS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -163,10 +163,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPaint: 0
   canDrag: 1
-  occupied: 0
   type: 3
   ShipPrefab: {fileID: 520827884}
   shotType: {fileID: 100000, guid: 9ce81c7f998fcff4aae2c9d608df8659, type: 2}
+  portion: {fileID: 0}
 --- !u!23 &267560695
 Renderer:
   m_ObjectHideFlags: 0
@@ -363,6 +363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ee8b090096bcf846b67183fa41c4de6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShipPrefab: {fileID: 0}
 --- !u!50 &520827887
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -390,8 +391,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
-  timeLeft: 0
-  tilt: 0
   boundary:
     xMin: -50
     xMax: 50
@@ -412,7 +411,7 @@ GameObject:
   - 33: {fileID: 550123035}
   - 23: {fileID: 550123034}
   m_Layer: 0
-  m_Name: GunRight
+  m_Name: GunRightS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -646,7 +645,7 @@ MonoBehaviour:
   particles: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 2}
   playerPrefab: {fileID: 520827884}
   makePrefab: 1
-  sceneNum: 2
+  sceneNum: 3
 --- !u!65 &612935514
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -805,7 +804,7 @@ GameObject:
   - 114: {fileID: 918960084}
   - 65: {fileID: 918960081}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: YellowBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -824,10 +823,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPaint: 0
   canDrag: 1
-  occupied: 0
-  type: 0
+  type: 5
   ShipPrefab: {fileID: 520827884}
   shotType: {fileID: 0}
+  portion: {fileID: 0}
 --- !u!23 &918960080
 Renderer:
   m_ObjectHideFlags: 0
@@ -1005,10 +1004,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPaint: 0
   canDrag: 1
-  occupied: 0
   type: 0
   ShipPrefab: {fileID: 520827884}
   shotType: {fileID: 0}
+  portion: {fileID: 0}
 --- !u!23 &1036548796
 Renderer:
   m_ObjectHideFlags: 0
@@ -1094,7 +1093,7 @@ GameObject:
   - 33: {fileID: 1094476464}
   - 23: {fileID: 1094476463}
   m_Layer: 0
-  m_Name: GunForward
+  m_Name: GunForwardS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1354,10 +1353,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPaint: 0
   canDrag: 1
-  occupied: 0
   type: 2
   ShipPrefab: {fileID: 520827884}
   shotType: {fileID: 100000, guid: 12e5bd5529234484499926f4cde55597, type: 2}
+  portion: {fileID: 0}
 --- !u!23 &1324136781
 Renderer:
   m_ObjectHideFlags: 0
@@ -1601,10 +1600,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPaint: 1
   canDrag: 0
-  occupied: 0
   type: 0
   ShipPrefab: {fileID: 0}
   shotType: {fileID: 0}
+  portion: {fileID: 0}
 --- !u!23 &1581111435
 Renderer:
   m_ObjectHideFlags: 0
@@ -1716,7 +1715,7 @@ GameObject:
   - 114: {fileID: 1905332189}
   - 65: {fileID: 1905332186}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: OrangeBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1735,10 +1734,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPaint: 0
   canDrag: 1
-  occupied: 0
-  type: 0
+  type: 4
   ShipPrefab: {fileID: 520827884}
   shotType: {fileID: 0}
+  portion: {fileID: 0}
 --- !u!23 &1905332185
 Renderer:
   m_ObjectHideFlags: 0
@@ -1916,10 +1915,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPaint: 0
   canDrag: 1
-  occupied: 0
   type: 1
   ShipPrefab: {fileID: 520827884}
   shotType: {fileID: 100000, guid: 28a73734a5a5576489bc8751e20056f7, type: 2}
+  portion: {fileID: 0}
 --- !u!23 &2140657939
 Renderer:
   m_ObjectHideFlags: 0

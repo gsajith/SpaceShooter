@@ -14,7 +14,7 @@ public class MoveBlock : MonoBehaviour {
 
 	void OnMouseOver() {
 		if(instantiated){
-			OnMouseDrag ();
+			//OnMouseDrag ();
 			instantiated = false;
 		}
 	}
@@ -55,7 +55,6 @@ public class MoveBlock : MonoBehaviour {
 			{
 				int modelX = (int)(2*(point.x) + 4.05f);
 				int modelY = (int)(2*(point.y) + 2.05f);
-				Debug.Log (modelX + ", " + modelY);
 
 				ShipPart copy = gameObject.GetComponent<ShipPart>();
 				if(copy != null){
@@ -66,6 +65,13 @@ public class MoveBlock : MonoBehaviour {
 					}
 				}
 				gameObject.transform.position = point;
+			}
+			if(this.gameObject.GetComponent<palletDrag>().portion != null) {
+				if(ShipMakerScript.shipParts.Contains(this.gameObject.GetComponent<palletDrag> ().portion)) 
+					ShipMakerScript.shipParts.Remove (this.gameObject.GetComponent<palletDrag> ().portion);
+				this.gameObject.GetComponent<palletDrag>().portion.loc = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
+				Debug.Log (this.gameObject.GetComponent<palletDrag>().portion.loc);
+				ShipMakerScript.shipParts.Add (this.gameObject.GetComponent<palletDrag> ().portion);
 			}
 
 		}
