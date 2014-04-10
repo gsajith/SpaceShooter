@@ -10,7 +10,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Menu.unity
   - enabled: 1
-    path: Assets/_Scenes/Level1.unity
+    path: Assets/Level1.unity
   - enabled: 1
     path: Assets/_Scenes/GameScene.unity
   - enabled: 1

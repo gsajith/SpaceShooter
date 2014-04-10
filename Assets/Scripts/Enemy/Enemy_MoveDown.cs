@@ -2,23 +2,16 @@
 using System.Collections;
 
 public class Enemy_MoveDown : MonoBehaviour {
-	public GameObject bullet;
-	public float fire_interval;
 	public float speed;
-	float last_shot;
 	public float hp;
 
 	void Start() {
-		last_shot = Time.time;
 		rigidbody2D.velocity = new Vector2 (0, speed * -1f);
 	}
 
 	// Update is called once per frame
 	void Update () {
-		if(Time.time-last_shot>fire_interval){
-			Instantiate(bullet, transform.position, transform.rotation);
-			last_shot = Time.time;
-		}
+
 	}
 
 	void OnTriggerEnter2D(Collider2D other){

@@ -7,14 +7,27 @@ public class Enemy_MoveRight : MonoBehaviour {
 	public float speed;
 	float last_shot;
 	public float hp;
+	bool frenzy; //extreme fire rate
+	float prev_firerate;
+	public GameObject lvlCtrl;
+	public LevelController controlScript;
 
 	void Start() {
+		lvlCtrl = GameObject.Find ("LevelController");
+		controlScript = lvlCtrl.GetComponent<LevelController> ();
+		prev_firerate = fire_interval;
 		last_shot = Time.time;
-		rigidbody2D.velocity = new Vector2 (0.5f, speed * -1f);
+		rigidbody2D.velocity = new Vector2 (0.8f, speed * -1f);
 	}
 
 	// Update is called once per frame
 	void Update () {
+		frenzy = controlScript.frenzy_trigger;
+		if(frenzy) {
+			fire_interval = 0.25f;
+		}
+		else
+			fire_interval = prev_firerate;
 		if(Time.time-last_shot>fire_interval){
 			Instantiate(bullet, transform.position, transform.rotation);
 			last_shot = Time.time;
