@@ -9,7 +9,12 @@ public class MoveBlock : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		for(int i = 0; i <= 8; i ++){
+			for(int j = 0; j <= 8; j++){
+				shipModel[i].intArray = new int[9];
+				shipModel[i][j] = -1;
+			}
+		}
 	}
 
 	void OnMouseOver() {
@@ -56,13 +61,19 @@ public class MoveBlock : MonoBehaviour {
 				int modelX = (int)(2*(point.x) + 4.05f);
 				int modelY = (int)(2*(point.y) + 2.05f);
 
-				ShipPart copy = gameObject.GetComponent<ShipPart>();
+				palletDrag copy = gameObject.GetComponent<palletDrag>();
+
+
 				if(copy != null){
 					if(modelX >= 0 && modelX <= 8 && modelY >= 0 && modelY <= 8)
 					{
-						shipModel[modelX].intArray = new int[9];
-						shipModel[modelX][modelY] = copy.type; //portion.type.ToString();
+						if(LegalPart (modelX, modelY, copy.type, shipModel)){
+							//shipModel[modelX].intArray = new int[9];
+							shipModel[modelX][modelY] = copy.type;
+							Debug.Log (modelX + ", " + modelY + " = " + shipModel[modelX][modelY]);
+						}
 					}
+
 				}
 				gameObject.transform.position = point;
 			}
@@ -78,7 +89,27 @@ public class MoveBlock : MonoBehaviour {
 
 	}
 	// Update is called once per frame
-	void Update () {
+	bool LegalPart (int x, int y, int type, MultidimensionalInt[] shipModel) {
+		/*if(shipModel[x][y] == 0 || shipModel[x][y] == 1 || shipModel[x][y] == 2 || shipModel[x][y] == 3) {
+			Debug.Log("Already a part there");
+			return false;
+		}*/
+		//if(type == 0) {//Normal Ship parts
+		//	if(
+		if(type == 1) {//Up Turret
+			if(shipModel[x][y-2] != 0){
+				Debug.Log("Turret must be placed on a ship part");
+				return false;
+			}
+		}/*
+		if(type == 1) {//Up Turret
+			if(
+		
+		if(Type == 2) {//Right Turret
+			if(
 
+		if(Type == 3) {//Left Turret
+			if(*/
+		return true;
 	}
 }

@@ -4,7 +4,7 @@ using System.Collections;
 [System.Serializable]
 public class MultidimensionalInt // taken from http://answers.unity3d.com/questions/64479/how-to-declare-a-multidimensional-array-of-strings.html
 {
-	public int[] intArray = new int[1];
+	public int[] intArray = new int[9];
 	
 	public int this[int index] {
 		get {

@@ -823,7 +823,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPaint: 0
   canDrag: 1
+<<<<<<< HEAD
   type: 5
+=======
+  type: 0
+>>>>>>> 195a86aba7a8d3c28795aeceb866c3cd9303b588
   ShipPrefab: {fileID: 520827884}
   shotType: {fileID: 0}
   portion: {fileID: 0}
@@ -1734,7 +1738,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPaint: 0
   canDrag: 1
+<<<<<<< HEAD
   type: 4
+=======
+  type: 0
+>>>>>>> 195a86aba7a8d3c28795aeceb866c3cd9303b588
   ShipPrefab: {fileID: 520827884}
   shotType: {fileID: 0}
   portion: {fileID: 0}
