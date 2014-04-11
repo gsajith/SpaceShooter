@@ -58,7 +58,7 @@ public class LevelController : MonoBehaviour {
 		if(Input.GetKeyDown("l")){
 			if(!forcefield_trigger && forcefield_cd<=0) {
 				forcefield_trigger = true;
-				Instantiate(ffield, new Vector3(0.03f, -0.5f, 0), Quaternion.identity);
+				Instantiate(ffield, new Vector3(0, -0.5f, 0), Quaternion.identity);
 				forcefield_cd = 8f; //forcefield cooldown timer
 			}
 		}
